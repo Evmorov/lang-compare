@@ -103,6 +103,14 @@ python:
 2. Add the first example to `code/python/`
 3. Add the second example to `code/python/3.6`
 
+## Deploy
+
+```
+git checkout source
+bundle exec middleman build
+bundle exec middleman deploy
+```
+
 ## Contributing
 
 Feel free to add or modify any examples.
