@@ -1,0 +1,1 @@
+println("10" is String)

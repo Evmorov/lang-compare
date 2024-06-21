@@ -1,0 +1,1 @@
+println("You should work".replace("work", "rest"))

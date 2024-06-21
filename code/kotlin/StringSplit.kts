@@ -1,0 +1,1 @@
+println("I like beer".split(" "))

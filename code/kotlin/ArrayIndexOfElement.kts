@@ -1,0 +1,1 @@
+println(listOf("a", "b", "c").indexOf("c"))

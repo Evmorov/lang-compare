@@ -5,12 +5,14 @@ String:
     java: StringCreate.java
     php: StringCreate.php
     python: string_create.py
+    kotlin: StringCreate.kts
   Concatenation:
     ruby: string_concat.rb
     javascript: string-concat.js
     java: StringConcat.java
     php: StringConcat.php
     python: string_concat.py
+    kotlin: StringConcat.kts
   Interpolation:
     ruby: string_interpolation.rb
     javascript: string-interpolation.js
@@ -19,42 +21,49 @@ String:
     python:
       .: string_interpolation.py
       '3.6': string_interpolation.py
+    kotlin: StringInterpolation.kts
   Remove part:
     ruby: string_remove.rb
     javascript: string-remove.js
     java: StringRemove.java
     php: StringRemove.php
     python: string_remove.py
+    kotlin: StringRemove.kts
   Replace:
     ruby: string_replace.rb
     javascript: string-replace.js
     java: StringReplace.java
     php: StringReplace.php
     python: string_replace.py
+    kotlin: StringReplace.kts
   Split:
     ruby: string_split.rb
     javascript: string-split.js
     java: StringSplit.java
     php: StringSplit.php
     python: string_split.py
+    kotlin: StringSplit.kts
   Remove leading and trailing whitespace:
     ruby: string_remove_whistespace.rb
     javascript: string-remove-whistespace.js
     java: StringRemoveWhitespace.java
     php: StringRemoveWhitespace.php
     python: string_remove_whistespace.py
+    kotlin: StringRemoveWhitespace.kts
   Compare:
     ruby: string_compare.rb
     javascript: string-compare.js
     java: StringCompare.java
     php: StringCompare.php
     python: string_compare.py
+    kotlin: StringCompare.kts
   Regex:
     ruby: string_regex.rb
     javascript: string-regex.js
     java: StringRegex.java
     php: StringRegex.php
     python: string_regex.py
+    kotlin: StringRegex.kts
 Number:
   Increment:
     ruby: number_increment.rb
@@ -62,24 +71,28 @@ Number:
     java: NumberIncrement.java
     php: NumberIncrement.php
     python: number_increment.py
+    kotlin: NumberIncrement.kts
   Compare:
     ruby: number_compare.rb
     javascript: number-compare.js
     java: NumberCompare.java
     php: NumberCompare.php
     python: number_compare.py
+    kotlin: NumberCompare.kts
   Random:
     ruby: number_random.rb
     javascript: number-random.js
     java: NumberRandom.java
     php: NumberRandom.php
     python: number_random.py
+    kotlin: NumberRandom.kts
   Float:
     ruby: number_float.rb
     javascript: number-float.js
     java: NumberFloat.java
     php: NumberFloat.php
     python: number_float.py
+    kotlin: NumberFloat.kts
 Type:
   Get type of object:
     ruby: type_get_type.rb
@@ -87,36 +100,42 @@ Type:
     java: TypeGetType.java
     php: TypeGetType.php
     python: type_get_type.py
+    kotlin: TypeGetType.kts
   Int to Float:
     ruby: type_int_to_float.rb
     javascript: type-int-to-float.js
     java: TypeIntToFloat.java
     php: TypeIntToFloat.php
     python: type_int_to_float.py
+    kotlin: TypeIntToFloat.kts
   Int to String:
     ruby: type_int_to_string.rb
     javascript: type-int-to-string.js
     java: TypeIntToString.java
     php: TypeIntToString.php
     python: type_int_to_string.py
+    kotlin: TypeIntToString.kts
   String to Int:
     ruby: type_string_to_int.rb
     javascript: type-string-to-int.js
     java: TypeStringToInt.java
     php: TypeStringToInt.php
     python: type_string_to_int.py
+    kotlin: TypeStringToInt.kts
   String?:
     ruby: type_is_string.rb
     javascript: type-is-string.js
     java: TypeIsString.java
     php: TypeIsString.php
     python: type_is_string.py
+    kotlin: TypeIsString.kts
   Null/True/False?:
     ruby: type_null_true_false.rb
     javascript: type-null-true-false.js
     java: TypeNullTrueFalse.java
     php: TypeNullTrueFalse.php
     python: type_null_true_false.py
+    kotlin: TypeNullTrueFalse.kts
 Array:
   Create populated:
     ruby: array_create_populated.rb
@@ -124,114 +143,133 @@ Array:
     java: ArrayCreatePopulated.java
     php: ArrayCreatePopulated.php
     python: array_create_populated.py
+    kotlin: ArrayCreatePopulated.kts
   Add:
     ruby: array_add.rb
     javascript: array-add.js
     java: ArrayAdd.java
     php: ArrayAdd.php
     python: array_add.py
+    kotlin: ArrayAdd.kts
   With different types:
     ruby: array_with_different_types.rb
     javascript: array-with-different-types.js
     java: ArrayDifferentTypes.java
     php: ArrayDifferentTypes.php
     python: array_with_different_types.py
+    kotlin: ArrayWithDifferentTypes.kts
   Include?:
     ruby: array_is_include.rb
     javascript: array-is-include.js
     java: ArrayIsInclude.java
     php: ArrayIsInclude.php
     python: array_is_include.py
+    kotlin: ArrayIsInclude.kts
   Iterate:
     ruby: array_iterate.rb
     javascript: array-iterate.js
     java: ArrayIterate.java
     php: ArrayIterate.php
     python: array_iterate.py
+    kotlin: ArrayIterate.kts
   Iterate with index:
     ruby: array_iterate_with_index.rb
     javascript: array-iterate-with-index.js
     java: ArrayIterateWithIndex.java
     php: ArrayIterateWithIndex.php
     python: array_iterate_with_index.py
+    kotlin: ArrayIterateWithIndex.kts
   Get first, last element:
     ruby: array_get_first_and_last.rb
     javascript: array-get-first-and-last.js
     java: ArrayGetFirstAndLast.java
     php: ArrayGetFirstAndLast.php
     python: array_get_first_and_last.py
+    kotlin: ArrayGetFirstAndLast.kts
   Find first:
     ruby: array_find.rb
     javascript: array-find.js
     java: ArrayFind.java
     php: ArrayFind.php
     python: array_find.py
+    kotlin: ArrayFind.kts
   Select (find all):
     ruby: array_select.rb
     javascript: array-select.js
     java: ArraySelect.java
     php: ArraySelect.php
     python: array_select.py
+    kotlin: ArraySelect.kts
   Map (change all):
     ruby: array_map.rb
     javascript: array-map.js
     java: ArrayMap.java
     php: ArrayMap.php
     python: array_map.py
+    kotlin: ArrayMap.kts
   Concatenation:
     ruby: array_concat.rb
     javascript: array-concat.js
     java: ArrayConcat.java
     php: ArrayConcat.php
     python: array_concat.py
+    kotlin: ArrayConcat.kts
   Sort:
     ruby: array_sort.rb
     javascript: array-sort.js
     java: ArraySort.java
     php: ArraySort.php
     python: array_sort.py
+    kotlin: ArraySort.kts
   Multidimensional:
     ruby: array_multi.rb
     javascript: array-multi.js
     java: ArrayMulti.java
     php: ArrayMulti.php
     python: array_multi.py
+    kotlin: ArrayMulti.kts
   Size:
     ruby: array_size.rb
     javascript: array-size.js
     java: ArraySize.java
     php: ArraySize.php
     python: array_size.py
+    kotlin: ArraySize.kts
   Count:
     ruby: array_count.rb
     javascript: array-count.js
     java: ArrayCount.java
     php: ArrayCount.php
     python: array_count.py
+    kotlin: ArrayCount.kts
   Reduce:
     ruby: array_reduce.rb
     javascript: array-reduce.js
     java: ArrayReduce.java
     php: ArrayReduce.php
     python: array_reduce.py
+    kotlin: ArrayReduce.kts
   Index of element:
     ruby: array_index_of_element.rb
     javascript: array-index-of-element.js
     java: ArrayIndexOfElement.java
     php: ArrayIndexOfElement.php
     python: array_index_of_element.py
+    kotlin: ArrayIndexOfElement.kts
   Delete element:
     ruby: array_delete_element.rb
     javascript: array-delete-element.js
     java: ArrayDeleteElement.java
     php: ArrayDeleteElement.php
     python: array_delete_element.py
+    kotlin: ArrayDeleteElement.kts
   Unique:
     ruby: array_unique.rb
     javascript: array-unique.js
     java: ArrayUnique.java
     php: ArrayUnique.php
     python: array_unique.py
+    kotlin: ArrayUnique.kts
 Hash (map):
   Create populated:
     ruby: hash_create_populated.rb
@@ -239,36 +277,42 @@ Hash (map):
     java: HashCreatePopulated.java
     php: HashCreatePopulated.php
     python: hash_create_populated.py
+    kotlin: HashCreatePopulated.kts
   Add:
     ruby: hash_add.rb
     javascript: hash-add.js
     java: HashAdd.java
     php: HashAdd.php
     python: hash_add.py
+    kotlin: HashAdd.kts
   Iterate:
     ruby: hash_iterate.rb
     javascript: hash-iterate.js
     java: HashIterate.java
     php: HashIterate.php
     python: hash_iterate.py
+    kotlin: HashIterate.kts
   Include?:
     ruby: hash_is_include.rb
     javascript: hash-is-include.js
     java: HashIsInclude.java
     php: HashIsInclude.php
     python: hash_is_include.py
+    kotlin: HashIsInclude.kts
   Get value:
     ruby: hash_get_value.rb
     javascript: hash-get-value.js
     java: HashGetValue.java
     php: HashGetValue.php
     python: hash_get_value.py
+    kotlin: HashGetValue.kts
   Size:
     ruby: hash_size.rb
     javascript: hash-size.js
     java: HashSize.java
     php: HashSize.php
     python: hash_size.py
+    kotlin: HashSize.kts
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
@@ -276,24 +320,28 @@ Other structure:
     java: OtherStructureBoolean.java
     php: OtherStructureBoolean.php
     python: other_structure_boolean.py
+    kotlin: OtherStructureBoolean.kts
   Constant:
     ruby: other_structure_constant.rb
     javascript: other-structure-constant.js
     java: OtherStructureConstant.java
     php: OtherStructureConstant.php
     python: other_structure_constant.py
+    kotlin: OtherStructureConstant.kts
   Constant list:
     ruby: other_structure_constant_list.rb
     javascript: other-structure-constant-list.js
     java: OtherStructureConstantList.java
     php: OtherStructureConstantList.php
     python: other_structure_constant_list.py
+    kotlin: OtherStructureConstantList.kts
   Struct:
     ruby: other_structure_struct.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: other_structure_struct.py
+    kotlin: OtherStructureStruct.kts
 Conditional:
   If:
     ruby: conditional_if.rb
@@ -301,48 +349,56 @@ Conditional:
     java: ConditionalIf.java
     php: ConditionalIf.php
     python: conditional_if.py
+    kotlin: ConditionalIf.kts
   Unless:
     ruby: conditional_unless.rb
     javascript: conditional-unless.js
     java: ConditionalUnless.java
     php: ConditionalUnless.php
     python: conditional_unless.py
+    kotlin: ConditionalUnless.kts
   If/else:
     ruby: conditional_if_else.rb
     javascript: conditional-if-else.js
     java: ConditionalIfElse.java
     php: ConditionalIfElse.php
     python: conditional_if_else.py
+    kotlin: ConditionalIfElse.kts
   And/Or:
     ruby: conditional_and_or.rb
     javascript: conditional-and-or.js
     java: ConditionalAndOr.java
     php: ConditionalAndOr.php
     python: conditional_and_or.py
+    kotlin: ConditionalAndOr.kts
   Switch:
     ruby: conditional_switch.rb
     javascript: conditional-switch.js
     java: ConditionalSwitch.java
     php: ConditionalSwitch.php
     python: conditional_switch.py
+    kotlin: ConditionalSwitch.kts
   Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: conditional_switch_as_else_if.py
+    kotlin: ConditionalSwitch.kts
   Ternary:
     ruby: conditional_ternary.rb
     javascript: conditional-ternary.js
     java: ConditionalTernary.java
     php: ConditionalTernary.php
     python: conditional_ternary.py
+    kotlin: ConditionalTernary.kts
   If assign:
     ruby: conditional_if_assign.rb
     javascript: conditional-if-assign.js
     java: no.java
     php: no.php
     python: conditional_if_assign.py
+    kotlin: ConditionalIfAssign.kts
 Loop:
   For:
     ruby: loop_for.rb
@@ -350,48 +406,56 @@ Loop:
     java: LoopFor.java
     php: LoopFor.php
     python: loop_for.py
+    kotlin: LoopFor.kts
   For with a step:
     ruby: loop_for_with_step.rb
     javascript: loop-for-with-step.js
     java: LoopForWithStep.java
     php: LoopForWithStep.php
     python: loop_for_with_step.py
+    kotlin: LoopForWithStep.kts
   Times:
     ruby: loop_times.rb
     javascript: loop-times.js
     java: LoopTimes.java
     php: LoopTimes.php
     python: loop_times.py
+    kotlin: LoopTimes.kts
   While:
     ruby: loop_while.rb
     javascript: loop-while.js
     java: LoopWhile.java
     php: LoopWhile.php
     python: loop_while.py
+    kotlin: LoopWhile.kts
   Until:
     ruby: loop_until.rb
     javascript: loop-until.js
     java: LoopUntil.java
     php: LoopUntil.php
     python: loop_until.py
+    kotlin: LoopUntil.kts
   Return array:
     ruby: loop_return_array.rb
     javascript: loop-return-array.js
     java: no.java
     php: no.php
     python: loop_return_array.py
+    kotlin: LoopReturnArray.kts
   Break:
     ruby: loop_break.rb
     javascript: loop-break.js
     java: LoopBreak.java
     php: LoopBreak.php
     python: loop_break.py
+    kotlin: LoopBreak.kts
   Next/Continue:
     ruby: loop_next.rb
     javascript: loop-next.js
     java: LoopNext.java
     php: LoopNext.php
     python: loop_next.py
+    kotlin: LoopNext.kts
 Math:
   Max/Min:
     ruby: math_max_min.rb
@@ -399,12 +463,14 @@ Math:
     java: MathMaxMin.java
     php: MathMaxMin.php
     python: math_max_min.py
+    kotlin: MathMaxMin.kts
   Sqrt:
     ruby: math_sqrt.rb
     javascript: math-sqrt.js
     java: MathSqrt.java
     php: MathSqrt.php
     python: math_sqrt.py
+    kotlin: MathSqrt.kts
 Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
@@ -412,24 +478,28 @@ Error handling:
     java: ErrorTryCatch.java
     php: ErrorTryCatch.php
     python: error_try_catch.py
+    kotlin: ErrorTryCatch.kts
   With a message:
     ruby: error_with_a_message.rb
     javascript: error-with-a-message.js
     java: ErrorWithAMessage.java
     php: ErrorWithAMessage.php
     python: error_with_a_message.py
+    kotlin: ErrorWithAMessage.kts
   Method:
     ruby: error_method.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: error_method.py
+    kotlin: ErrorMethod.kts
   Throw exception:
     ruby: error_throw.rb
     javascript: error-throw.js
     java: ErrorThrow.java
     php: ErrorThrow.php
     python: error_throw.py
+    kotlin: ErrorThrow.kts
 File:
   Read:
     ruby: file_read.rb
@@ -437,42 +507,49 @@ File:
     java: FileRead.java
     php: FileRead.php
     python: file_read.py
+    kotlin: FileRead.kts
   Write:
     ruby: file_write.rb
     javascript: file-write.js
     java: FileWrite.java
     php: FileWrite.php
     python: file_write.py
+    kotlin: FileWrite.kts
   Get working dir path:
     ruby: file_get_working_dir.rb
     javascript: file-get-working-dir.js
     java: FileGetWorkingDir.java
     php: FileGetWorkingDir.php
     python: file_get_working_dir.py
+    kotlin: FileGetWorkingDir.kts
   File path:
     ruby: file_path.rb
     javascript: file-path.js
     java: FilePath.java
     php: FilePath.php
     python: file_path.py
+    kotlin: FilePath.kts
   Dir path:
     ruby: file_dir_path.rb
     javascript: file-dir-path.js
     java: FileDirPath.java
     php: FileDirPath.php
     python: file_dir_path.py
+    kotlin: FileDirPath.kts
   Parent dir path:
     ruby: file_parent_dir_path.rb
     javascript: file-parent-dir-path.js
     java: FileParentDirPath.java
     php: FileParentDirPath.php
     python: file_parent_dir_path.py
+    kotlin: FileParentDirPath.kts
   Sister dir path:
     ruby: file_sister_dir_path.rb
     javascript: file-sister-dir-path.js
     java: FileSisterDirPath.java
     php: FileSisterDirPath.php
     python: file_sister_dir_path.py
+    kotlin: FileSisterDirPath.kts
 Method:
   Declare:
     ruby: method_declare.rb
@@ -480,54 +557,63 @@ Method:
     java: MethodDeclare.java
     php: MethodDeclare.php
     python: method_declare.py
+    kotlin: MethodDeclare.kts
   Multiple arguments:
     ruby: method_multi_arg.rb
     javascript: method-multi-arg.js
     java: MethodMultiArg.java
     php: MethodMultiArg.php
     python: method_multi_arg.py
+    kotlin: MethodMultiArg.kts
   Default value for argument:
     ruby: method_default_value.rb
     javascript: method-default-value.js
     java: no.java
     php: no.php
     python: method_default_value.py
+    kotlin: MethodDefaultValue.kts
   Return:
     ruby: method_return.rb
     javascript: method-return.js
     java: MethodReturn.java
     php: MethodReturn.php
     python: method_return.py
+    kotlin: MethodReturn.kts
   Closure:
     ruby: method_closure.rb
     javascript: method-closure.js
     java: no.java
     php: no.php
     python: method_closure.py
+    kotlin: MethodClosure.kts
   Block passing:
     ruby: method_block_passing.rb
     javascript: method-block-passing.js
     java: no.java
     php: no.php
     python: method_block_passing.py
+    kotlin: MethodBlockPassing.kts
   Block binding:
     ruby: method_block_binding.rb
     javascript: method-block-binding.js
     java: no.java
     php: no.php
     python: method_block_binding.py
+    kotlin: MethodBlockBinding.kts
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: method_init_in_runtime.py
+    kotlin: no.kts
   Alias:
     ruby: method_alias.rb
     javascript: method-alias.js
     java: no.java
     php: no.php
     python: method_alias.py
+    kotlin: MethodAlias.kts
 Class:
   Declare:
     ruby: class_declare.rb
@@ -535,66 +621,77 @@ Class:
     java: ClassDeclare.java
     php: ClassDeclare.php
     python: class_declare.py
+    kotlin: ClassDeclare.kts
   Constructor:
     ruby: class_constructor.rb
     javascript: class-constructor.js
     java: ClassConstructor.java
     php: ClassConstructor.php
     python: class_constructor.py
+    kotlin: ClassConstructor.kts
   Method call:
     ruby: class_method_call.rb
     javascript: class-method-call.js
     java: ClassMethodCall.java
     php: ClassMethodCall.php
     python: class_method_call.py
+    kotlin: ClassMethodCall.kts
   Class method:
     ruby: class_class_method.rb
     javascript: class-class-method.js
     java: ClassClassMethod.java
     php: ClassClassMethod.php
     python: class_class_method.py
+    kotlin: ClassClassMethod.kts
   Private method:
     ruby: class_private_method.rb
     javascript: no.js
     java: ClassPrivateMethod.java
     php: ClassPrivateMethod.php
     python: class_private_method.py
+    kotlin: ClassPrivateMethod.kts
   Private method, access instance variable:
     ruby: class_private_method_access_instance_var.rb
     javascript: no.js
     java: ClassPrivateMethodAccessInstance.java
     php: ClassPrivateMethodAccessInstance.php
     python: class_private_method_access_instance_var.py
+    kotlin: ClassPrivateMethodAccessInstance.kts
   Field:
     ruby: class_field.rb
     javascript: class-field.js
     java: ClassField.java
     php: ClassField.php
     python: class_field.py
+    kotlin: ClassField.kts
   Get/set:
     ruby: class_get_set.rb
     javascript: class-get-set.js
     java: ClassGetSet.java
     php: ClassGetSet.php
     python: class_get_set.py
+    kotlin: ClassGetSet.kts
   Inheritance:
     ruby: class_inheritance.rb
     javascript: class-inheritance.js
     java: ClassInheritance.java
     php: ClassInheritance.php
     python: class_inheritance.py
+    kotlin: ClassInheritance.kts
   Mixin:
     ruby: class_mixin.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: class_mixin.py
+    kotlin: ClassMixin.kts
   Has method?:
     ruby: class_has_method.rb
     javascript: class-has-method.js
     java: ClassHasMethod.java
     php: ClassHasMethod.php
     python: class_has_method.py
+    kotlin: ClassHasMethod.kts
 Other:
   Comment:
     ruby: other_comment.rb
@@ -602,59 +699,67 @@ Other:
     java: OtherComment.java
     php: OtherComment.php
     python: other_comment.py
+    kotlin: OtherComment.kts
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: other_assign_value_if_not_exist.py
+    kotlin: OtherAssignValueIfNotExist.kts
   Safe navigation:
-    ruby:
-      '2.3': other_safe_navigation.rb
+    ruby: other_safe_navigation.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: no.py
+    kotlin: OtherSafeNavigation.kts
   Import another file:
     ruby: other_import_file.rb
     javascript: other-import-file.js
     java: OtherImportFile.java
     php: OtherImportFile.php
     python: other_import_file.py
+    kotlin: OtherImportFile.kts
   Destructuring assignment:
     ruby: other_destructing_assignment.rb
     javascript: other-destructing-assignment.js
     java: no.java
     php: no.php
     python: other_destructing_assignment.py
+    kotlin: OtherDestructingAssignment.kts
   Date:
     ruby: other_date.rb
     javascript: other-date.js
     java: OtherDate.java
     php: OtherDate.php
     python: other_date.py
+    kotlin: OtherDate.kts
   Time:
     ruby: other_time.rb
     javascript: other-time.js
     java: OtherTime.java
     php: OtherTime.php
     python: other_time.py
+    kotlin: OtherTime.kts
   Not:
     ruby: other_not.rb
     javascript: other-not.js
     java: OtherNot.java
     php: OtherNot.php
     python: other_not.py
+    kotlin: OtherNot.kts
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     javascript: no.js
     java: no.java
     php: no.php
     python: conditional_assign_this_or_that.py
+    kotlin: ConditionalAssignThisOrThat.kts
   Run command:
     ruby: other_run_command.rb
     javascript: other-run-command.js
     java: OtherRunCommand.java
     php: OtherRunCommand.php
     python: other_run_command.py
-
+    kotlin: OtherRunCommand.kts

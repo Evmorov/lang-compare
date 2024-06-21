@@ -40,6 +40,12 @@ task :run_php do
   puts "\n\n"
 end
 
+task :run_kotlin do
+  puts 'Executing kotlin files'
+  run_scripts('kotlinc -script', 'kts')
+  puts "\n\n"
+end
+
 def run_scripts(command, ext)
   Dir.glob File.join(CODE_DIR, '**', "*.#{ext}") do |filepath|
     run_file("#{command} #{filepath}", "#{filepath}.out")

@@ -1,0 +1,1 @@
+println(listOf(1, 2, 3).reduce { sum, element -> sum + element })
