@@ -20,7 +20,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='1'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python'>Python</span>
+<span class='lang-selected' data-lang-url='kotlin'>Kotlin</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -149,9 +149,6 @@
 </li>
 <li>
 <a class='scroll' href='#type_string' title='String?'>String?</a>
-</li>
-<li>
-<a class='scroll' href='#type_null_true_false' title='Null/True/False?'>Null/True/False?</a>
 </li>
 </ul>
 </li>
@@ -417,9 +414,6 @@
 <a class='scroll' href='#method_block_binding' title='Block binding'>Block binding</a>
 </li>
 <li>
-<a class='scroll' href='#method_initialize_in_runtime' title='Initialize in runtime'>Initialize in runtime</a>
-</li>
-<li>
 <a class='scroll' href='#method_alias' title='Alias'>Alias</a>
 </li>
 </ul>
@@ -476,6 +470,9 @@
 <a class='scroll' href='#other_assign_value_if_not_exist' title='Assign value if not exist'>Assign value if not exist</a>
 </li>
 <li>
+<a class='scroll' href='#other_safe_navigation' title='Safe navigation'>Safe navigation</a>
+</li>
+<li>
 <a class='scroll' href='#other_import_another_file' title='Import another file'>Import another file</a>
 </li>
 <li>
@@ -504,7 +501,7 @@
 </div>
 <div class='row'>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python</h2>
+<h2 class='compare-header2'>Kotlin</h2>
 </div>
 <div class='col-md-6'>
 <h2 class='compare-header2'>JavaScript</h2>
@@ -521,9 +518,8 @@ Create
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">greeting</span> <span class="p">=</span> <span class="s">"Hello World!"</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>Hello World!
 </pre>
 </div>
@@ -545,7 +541,7 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"Don't worry,"</span> <span class="p">+</span> <span class="s">" be happy"</span><span class="p">)</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
@@ -567,16 +563,9 @@ Interpolation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
-<span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'%s %s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
-</pre>
-&lt;span class=&#39;small&#39;&gt;[ 3.6 ]&lt;/span&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight python&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Don&#39;t worry,&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;be happy&#39;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">first</span> <span class="p">=</span> <span class="s">"Don't worry,"</span>
+<span class="kd">val</span> <span class="py">second</span> <span class="p">=</span> <span class="s">"be happy"</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"$first $second"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
 </div>
@@ -599,7 +588,7 @@ Remove part
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'not '</span><span class="p">,</span> <span class="s">''</span><span class="p">))</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"This is not funny! I am not like him!"</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="s">"not "</span><span class="p">,</span> <span class="s">""</span><span class="p">))</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>This is funny! I am like him!
 </pre>
@@ -621,8 +610,7 @@ Replace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'You should work'</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'work'</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"You should work"</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="s">"work"</span><span class="p">,</span> <span class="s">"rest"</span><span class="p">))</span></code></pre></div>
 <pre class='unstyled output text-muted'>You should rest
 </pre>
 </div>
@@ -643,9 +631,8 @@ Split
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'I like beer'</span><span class="p">.</span><span class="n">split</span><span class="p">())</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27;]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"I like beer"</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s">" "</span><span class="p">))</span></code></pre></div>
+<pre class='unstyled output text-muted'>[I, like, beer]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -665,8 +652,7 @@ Remove leading and trailing whitespace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">' eh? '</span><span class="p">.</span><span class="n">strip</span><span class="p">())</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">" eh? "</span><span class="p">.</span><span class="nf">trim</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>eh?
 </pre>
 </div>
@@ -687,11 +673,10 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">==</span> <span class="s">'string'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">!=</span> <span class="s">'string'</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
-False
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"string"</span> <span class="p">==</span> <span class="s">"string"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"string"</span> <span class="p">!=</span> <span class="s">"string"</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
+false
 </pre>
 </div>
 <div class='col-md-6'>
@@ -713,13 +698,11 @@ Regex
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">re</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^b'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^a'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"apple"</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="nc">Regex</span><span class="p">(</span><span class="s">"^b"</span><span class="p">)))</span>
+<span class="nf">println</span><span class="p">(</span><span class="s">"apple"</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="nc">Regex</span><span class="p">(</span><span class="s">"^a"</span><span class="p">)))</span>
 </code></pre></div>
-<pre class='unstyled output text-muted'>None
-&lt;re.Match object; span=(0, 1), match=&#x27;a&#x27;&gt;
+<pre class='unstyled output text-muted'>false
+true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -742,10 +725,9 @@ Increment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">var</span> <span class="py">i</span> <span class="p">=</span> <span class="mi">9</span>
+<span class="n">i</span> <span class="p">+=</span> <span class="mi">1</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
@@ -768,13 +750,12 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
-True
-False
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="mi">1</span> <span class="p">&lt;</span> <span class="mi">2</span> <span class="p">&amp;&amp;</span> <span class="mi">2</span> <span class="p">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="mi">5</span> <span class="p">==</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="mi">5</span> <span class="p">!=</span> <span class="mi">5</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
+true
+false
 </pre>
 </div>
 <div class='col-md-6'>
@@ -798,10 +779,7 @@ Random
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">((</span><span class="mi">1</span><span class="o">..</span><span class="mi">2</span><span class="p">).</span><span class="nf">random</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
@@ -824,17 +802,15 @@ Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># rounds half to even
-</span></code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="mi">9</span> <span class="p">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="mi">9</span> <span class="p">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">kotlin</span><span class="p">.</span><span class="n">math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="mi">9</span> <span class="p">/</span> <span class="mf">2.0</span><span class="p">))</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">kotlin</span><span class="p">.</span><span class="n">math</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="mi">9</span> <span class="p">/</span> <span class="mf">2.0</span><span class="p">))</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>4
 4.5
-4
-4
+4.0
+4.0
 </pre>
 </div>
 <div class='col-md-6'>
@@ -861,11 +837,10 @@ Get type of object
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s">'hi'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&lt;class &#x27;str&#x27;&gt;
-&lt;class &#x27;int&#x27;&gt;
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"hi"</span><span class="o">::</span><span class="k">class</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="mi">1</span><span class="o">::</span><span class="k">class</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>class kotlin.String
+class kotlin.Int
 </pre>
 </div>
 <div class='col-md-6'>
@@ -891,8 +866,7 @@ Int to Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="nf">toDouble</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>10.0
 </pre>
 </div>
@@ -913,8 +887,7 @@ Int to String
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="nf">toString</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
@@ -935,8 +908,7 @@ String to Int
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s">'5'</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"5"</span><span class="p">.</span><span class="nf">toInt</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>5
 </pre>
 </div>
@@ -957,9 +929,8 @@ String?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="s">'10'</span><span class="p">,</span> <span class="nb">str</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="s">"10"</span> <span class="k">is</span> <span class="nc">String</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -967,71 +938,6 @@ String?
 </code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
-</div>
-</div>
-<h4 class='compare-header4'>
-Null/True/False?
-<small>
-<a class='link-unstyled' href='#type_null_true_false' id='type_null_true_false'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'true'</span> <span class="k">if</span> <span class="n">fn</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">else</span> <span class="s">'false'</span>
-        <span class="k">except</span> <span class="nb">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'error: %s'</span> <span class="o">%</span> <span class="n">e</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"  %-9r - %s"</span> <span class="o">%</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span>
-    <span class="k">print</span><span class="p">()</span>
-
-<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
-
-<span class="n">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if value is None:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if len(value):'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">values</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>if value:
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - true
-  0         - false
-  True      - true
-  False     - false
-  None      - false
-
-if value is None:
-  &#x27;string&#x27;  - false
-  &#x27;&#x27;        - false
-  [1, 2, 3] - false
-  []        - false
-  5         - false
-  0         - false
-  True      - false
-  False     - false
-  None      - true
-
-if len(value):
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - error: object of type &#x27;int&#x27; has no len()
-  0         - error: object of type &#x27;int&#x27; has no len()
-  True      - error: object of type &#x27;bool&#x27; has no len()
-  False     - error: object of type &#x27;bool&#x27; has no len()
-  None      - error: object of type &#x27;NoneType&#x27; has no len()
-
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
 </div>
 </div>
 <h3 class='compare-header3' id='array'>Array</h3>
@@ -1045,10 +951,9 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"first"</span><span class="p">,</span> <span class="s">"second"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>[first, second]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1069,12 +974,11 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">arr</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'first'</span><span class="p">)</span>
-<span class="n">arr</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'second'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;()</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="s">"first"</span><span class="p">)</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="s">"second"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>[first, second]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1097,9 +1001,8 @@ With different types
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, 1]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="s">"first"</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span></code></pre></div>
+<pre class='unstyled output text-muted'>[first, 1]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1119,9 +1022,8 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nf">contains</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1141,8 +1043,9 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nf">forEach</span> <span class="p">{</span> <span class="n">num</span> <span class="p">-&gt;</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>1
 2
@@ -1166,10 +1069,10 @@ Iterate with index
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">listOf</span><span class="p">(</span><span class="s">"one"</span><span class="p">,</span> <span class="s">"two"</span><span class="p">).</span><span class="nf">forEachIndexed</span> <span class="p">{</span> <span class="n">index</span><span class="p">,</span> <span class="n">num</span> <span class="p">-&gt;</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>one
 0
 two
@@ -1199,10 +1102,9 @@ Get first, last element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"one"</span><span class="p">,</span> <span class="s">"two"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">first</span><span class="p">())</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">last</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>one
 two
 </pre>
@@ -1229,9 +1131,8 @@ Find first
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">find</span> <span class="p">{</span> <span class="n">it</span> <span class="p">%</span> <span class="mi">2</span> <span class="p">==</span> <span class="mi">0</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
@@ -1253,9 +1154,8 @@ Select (find all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">filter</span> <span class="p">{</span> <span class="n">it</span> <span class="p">%</span> <span class="mi">2</span> <span class="p">==</span> <span class="mi">0</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>[10, 20]
 </pre>
 </div>
@@ -1277,9 +1177,8 @@ Map (change all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="n">it</span> <span class="p">*</span> <span class="mi">2</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>[2, 10, 20, 40]
 </pre>
 </div>
@@ -1301,8 +1200,7 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">+</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span></code></pre></div>
 <pre class='unstyled output text-muted'>[1, 2, 3, 4]
 </pre>
 </div>
@@ -1323,8 +1221,7 @@ Sort
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span><span class="nf">sorted</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>[1, 2, 3, 4]
 </pre>
 </div>
@@ -1345,9 +1242,8 @@ Multidimensional
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">multi</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="s">"first"</span><span class="p">,</span> <span class="s">"second"</span><span class="p">),</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"third"</span><span class="p">,</span> <span class="s">"forth"</span><span class="p">))</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span></code></pre></div>
 <pre class='unstyled output text-muted'>forth
 </pre>
 </div>
@@ -1369,8 +1265,7 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span><span class="n">size</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
@@ -1391,9 +1286,8 @@ Count
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span> <span class="n">it</span> <span class="p">&gt;</span> <span class="mi">10</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
@@ -1415,13 +1309,8 @@ Reduce
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">functools</span><span class="p">,</span> <span class="n">operator</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">functools</span><span class="p">.</span><span class="nb">reduce</span><span class="p">(</span><span class="n">operator</span><span class="p">.</span><span class="n">add</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># a more Pythonic example
-</span></code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span><span class="nf">reduce</span> <span class="p">{</span> <span class="n">sum</span><span class="p">,</span> <span class="n">element</span> <span class="p">-&gt;</span> <span class="n">sum</span> <span class="p">+</span> <span class="n">element</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>6
-6
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1441,8 +1330,7 @@ Index of element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">].</span><span class="n">index</span><span class="p">(</span><span class="s">'c'</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">).</span><span class="nf">indexOf</span><span class="p">(</span><span class="s">"c"</span><span class="p">))</span></code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
@@ -1463,11 +1351,10 @@ Delete element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
-<span class="n">arr</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'b'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;a&#x27;, &#x27;c&#x27;]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">mutableListOf</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">)</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">"b"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>[a, c]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1489,9 +1376,8 @@ Unique
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>{&#x27;a&#x27;, &#x27;b&#x27;}
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"a"</span><span class="p">).</span><span class="nf">distinct</span><span class="p">())</span></code></pre></div>
+<pre class='unstyled output text-muted'>[a, b]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1514,10 +1400,9 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">options</span> <span class="p">=</span> <span class="nf">mutableMapOf</span><span class="p">(</span><span class="s">"font_size"</span> <span class="n">to</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"font_family"</span> <span class="n">to</span> <span class="s">"Arial"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">options</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>{font_size=10, font_family=Arial}
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1538,12 +1423,11 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_family'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'Arial'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">options</span> <span class="p">=</span> <span class="n">mutableMapOf</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">,</span> <span class="nc">Any</span><span class="p">&gt;()</span>
+<span class="n">options</span><span class="p">[</span><span class="s">"font_size"</span><span class="p">]</span> <span class="p">=</span> <span class="mi">10</span>
+<span class="n">options</span><span class="p">[</span><span class="s">"font_family"</span><span class="p">]</span> <span class="p">=</span> <span class="s">"Arial"</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">options</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>{font_size=10, font_family=Arial}
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1566,11 +1450,15 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}.</span><span class="n">items</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">mapOf</span><span class="p">(</span><span class="s">"font_size"</span> <span class="n">to</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"font_family"</span> <span class="n">to</span> <span class="s">"Arial"</span><span class="p">).</span><span class="nf">forEach</span> <span class="p">{</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">-&gt;</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_size
+10
+font_family
+Arial
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1595,10 +1483,9 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'font_size'</span> <span class="ow">in</span> <span class="n">options</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">options</span> <span class="p">=</span> <span class="nf">mapOf</span><span class="p">(</span><span class="s">"font_size"</span> <span class="n">to</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"font_family"</span> <span class="n">to</span> <span class="s">"Arial"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">options</span><span class="p">.</span><span class="nf">containsKey</span><span class="p">(</span><span class="s">"font_size"</span><span class="p">))</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1619,9 +1506,8 @@ Get value
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">])</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">options</span> <span class="p">=</span> <span class="nf">mapOf</span><span class="p">(</span><span class="s">"font_size"</span> <span class="n">to</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"font_family"</span> <span class="n">to</span> <span class="s">"Arial"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s">"font_size"</span><span class="p">])</span></code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
@@ -1643,9 +1529,8 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">options</span> <span class="p">=</span> <span class="nf">mapOf</span><span class="p">(</span><span class="s">"font_size"</span> <span class="n">to</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"font_family"</span> <span class="n">to</span> <span class="s">"Arial"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">options</span><span class="p">.</span><span class="n">size</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
@@ -1668,10 +1553,8 @@ Boolean
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">try_it</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="k">if</span> <span class="n">try_it</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Garlic gum is not funny'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">tryIt</span> <span class="p">=</span> <span class="k">true</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">tryIt</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"Garlic gum is not funny"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>Garlic gum is not funny
 </pre>
 </div>
@@ -1693,11 +1576,14 @@ Constant
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">COST</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">COST</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">print</span><span class="p">(</span><span class="n">COST</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>50
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">COST</span> <span class="p">=</span> <span class="mi">100</span>
+<span class="kd">val</span> <span class="py">COST</span> <span class="p">=</span> <span class="mi">50</span>
+<span class="nf">println</span><span class="p">(</span><span class="nc">COST</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>code&#x2F;kotlin&#x2F;other_structure_constant.kts:3:9: error: overload resolution ambiguity: 
+public final val COST: Int defined in Other_structure_constant
+public final val COST: Int defined in Other_structure_constant
+println(COST)
+        ^
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1732,12 +1618,11 @@ Constant list
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Colors</span><span class="p">:</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="s">'#FF0000'</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="s">'#00FF00'</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Colors</span><span class="p">.</span><span class="n">GREEN</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">object</span> <span class="nc">Colors</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="kd">val</span> <span class="py">RED</span> <span class="p">=</span> <span class="s">"#FF0000"</span>
+  <span class="k">const</span> <span class="kd">val</span> <span class="py">GREEN</span> <span class="p">=</span> <span class="s">"#00FF00"</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nc">Colors</span><span class="p">.</span><span class="nc">GREEN</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>#00FF00
 </pre>
 </div>
@@ -1762,13 +1647,10 @@ Struct
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">collections</span>
-
-<span class="k">class</span> <span class="nc">Customer</span><span class="p">(</span><span class="n">collections</span><span class="p">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s">'Customer'</span><span class="p">,</span> <span class="s">'name address'</span><span class="p">)):</span>
-    <span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">"Hello %s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">name</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Customer</span><span class="p">(</span><span class="s">'Dave'</span><span class="p">,</span> <span class="s">'123 Main'</span><span class="p">).</span><span class="n">greeting</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">data class</span> <span class="nc">Customer</span><span class="p">(</span><span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="kd">val</span> <span class="py">address</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">greeting</span><span class="p">()</span> <span class="p">=</span> <span class="s">"Hello $name!"</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nc">Customer</span><span class="p">(</span><span class="s">"Dave"</span><span class="p">,</span> <span class="s">"123 Main"</span><span class="p">).</span><span class="nf">greeting</span><span class="p">())</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Hello Dave!
 </pre>
@@ -1788,9 +1670,7 @@ If
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Hello'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">if</span> <span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>Hello
 </pre>
 </div>
@@ -1811,10 +1691,8 @@ Unless
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">angry</span> <span class="p">=</span> <span class="k">false</span>
+<span class="k">if</span> <span class="p">(!</span><span class="n">angry</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"smile!"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>smile!
 </pre>
 </div>
@@ -1836,11 +1714,11 @@ If/else
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'work'</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'sleep'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">if</span> <span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"work"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"sleep"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>work
 </pre>
 </div>
@@ -1865,11 +1743,8 @@ And/Or
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'no'</span><span class="p">)</span>
-<span class="k">if</span> <span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'yes'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">if</span> <span class="p">(</span><span class="k">true</span> <span class="p">&amp;&amp;</span> <span class="k">false</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"no"</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">true</span> <span class="p">||</span> <span class="k">false</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"yes"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>yes
 </pre>
 </div>
@@ -1891,18 +1766,14 @@ Switch
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
-<span class="k">if</span> <span class="n">foo</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"It's between 1 and 5"</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'10 or 20'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="o">==</span> <span class="s">'And'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'case in one line'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You passed a string %r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You gave me %r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">foo</span><span class="p">:</span> <span class="nc">Any</span> <span class="p">=</span> <span class="s">"Hello!"</span>
+<span class="k">when</span> <span class="p">(</span><span class="n">foo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"It's between 1 and 5"</span><span class="p">)</span>
+  <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"10 or 20"</span><span class="p">)</span>
+  <span class="s">"And"</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"case in one line"</span><span class="p">)</span>
+  <span class="k">is</span> <span class="nc">String</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"You passed a string '$foo'"</span><span class="p">)</span>
+  <span class="k">else</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"You gave me '$foo'"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
 </pre>
 </div>
@@ -1931,16 +1802,15 @@ Switch as else if
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="s">'F'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="s">'D'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="s">'C'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="s">'B'</span><span class="p">),</span>
-<span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">((</span><span class="n">g</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grades</span> <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">),</span> <span class="s">'A'</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>C
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">foo</span><span class="p">:</span> <span class="nc">Any</span> <span class="p">=</span> <span class="s">"Hello!"</span>
+<span class="k">when</span> <span class="p">(</span><span class="n">foo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"It's between 1 and 5"</span><span class="p">)</span>
+  <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"10 or 20"</span><span class="p">)</span>
+  <span class="s">"And"</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"case in one line"</span><span class="p">)</span>
+  <span class="k">is</span> <span class="nc">String</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"You passed a string '$foo'"</span><span class="p">)</span>
+  <span class="k">else</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"You gave me '$foo'"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+<pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1957,8 +1827,7 @@ Ternary
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'no'</span> <span class="k">if</span> <span class="bp">False</span> <span class="k">else</span> <span class="s">'yes'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="s">"no"</span> <span class="k">else</span> <span class="s">"yes"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>yes
 </pre>
 </div>
@@ -1979,9 +1848,8 @@ If assign
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">result</span> <span class="o">=</span> <span class="s">'a'</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">'b'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">result</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="sc">'a'</span> <span class="k">else</span> <span class="sc">'b'</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>a
 </pre>
 </div>
@@ -2000,9 +1868,9 @@ For
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'%d. Hi'</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">forEach</span> <span class="p">{</span> <span class="n">i</span> <span class="p">-&gt;</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"$i. Hi"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
 3. Hi
@@ -2028,9 +1896,9 @@ For with a step
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="mi">4</span> <span class="n">step</span> <span class="mi">2</span><span class="p">).</span><span class="nf">forEach</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>0
 2
 4
@@ -2057,9 +1925,9 @@ Times
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Hi'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"Hi"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>Hi
 Hi
 Hi
@@ -2086,11 +1954,11 @@ While
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
-  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">var</span> <span class="py">i</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="p">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">i</span> <span class="p">+=</span> <span class="mi">1</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
@@ -2114,11 +1982,11 @@ Until
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">var</span> <span class="py">i</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="p">!=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">i</span> <span class="p">+=</span> <span class="mi">1</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
@@ -2141,10 +2009,11 @@ Return array
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s">"%d. Hello!"</span> <span class="o">%</span> <span class="n">time</span> <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greetings</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>[&#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27;]
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">greetings</span> <span class="p">=</span> <span class="nc">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span> <span class="n">i</span> <span class="p">-&gt;</span> <span class="s">"${i + 1}. Hello!"</span> <span class="p">}</span>
+<span class="n">greetings</span><span class="p">.</span><span class="nf">forEach</span> <span class="p">{</span> <span class="nf">println</span><span class="p">(</span><span class="n">it</span><span class="p">)</span> <span class="p">}</span></code></pre></div>
+<pre class='unstyled output text-muted'>1. Hello!
+2. Hello!
+3. Hello!
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2165,10 +2034,10 @@ Break
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"%d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="k">break</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">for</span> <span class="p">(</span><span class="n">time</span> <span class="k">in</span> <span class="mi">0</span> <span class="n">until</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"${time + 1}. Hi"</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">time</span> <span class="p">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span>
+<span class="p">}</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
@@ -2195,10 +2064,10 @@ Next/Continue
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-      <span class="k">continue</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"%d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">for</span> <span class="p">(</span><span class="n">time</span> <span class="k">in</span> <span class="mi">0</span> <span class="n">until</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">time</span> <span class="p">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">continue</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"${time + 1}. Hi"</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 3. Hi
@@ -2226,10 +2095,9 @@ Max/Min
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">minOrNull</span><span class="p">())</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">maxOrNull</span><span class="p">())</span></code></pre></div>
 <pre class='unstyled output text-muted'>1
 3
 </pre>
@@ -2254,10 +2122,7 @@ Sqrt
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="nc">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mf">9.0</span><span class="p">))</span></code></pre></div>
 <pre class='unstyled output text-muted'>3.0
 </pre>
 </div>
@@ -2279,15 +2144,17 @@ Try/catch/finally
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"Can't divide"</span><span class="p">)</span>
-<span class="k">finally</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"But that's ok"</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="mi">1</span> <span class="p">/</span> <span class="mi">0</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">ArithmeticException</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"Can't divide"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"But that's ok"</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Can&#x27;t divide
 But that&#x27;s ok
+kotlin.Unit
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2314,12 +2181,12 @@ With a message
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>division by zero
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="mi">1</span> <span class="p">/</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+<pre class='unstyled output text-muted'>&#x2F; by zero
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2343,14 +2210,15 @@ Method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-  <span class="k">try</span><span class="p">:</span>
-    <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
-  <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-<span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>division by zero
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">num2</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">num1</span> <span class="p">/</span> <span class="n">num2</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nf">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>&#x2F; by zero
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2367,11 +2235,11 @@ Throw exception
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="k">raise</span> <span class="nb">Exception</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="nc">Exception</span><span class="p">(</span><span class="s">"An error!"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="nc">Exception</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>An error!
 </pre>
 </div>
@@ -2397,11 +2265,11 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">import</span> <span class="nn">java.nio.file.Paths</span>
+<span class="k">import</span> <span class="nn">java.nio.file.Files</span>
 
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">())</span>
-</code></pre></div>
+<span class="kd">val</span> <span class="py">file_path</span> <span class="p">=</span> <span class="nc">Paths</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="nc">System</span><span class="p">.</span><span class="nf">getProperty</span><span class="p">(</span><span class="s">"user.dir"</span><span class="p">),</span> <span class="s">"code"</span><span class="p">,</span> <span class="s">"file.txt"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="nc">Files</span><span class="p">.</span><span class="nf">readString</span><span class="p">(</span><span class="n">file_path</span><span class="p">))</span></code></pre></div>
 <pre class='unstyled output text-muted'>Hello
 World
 
@@ -2429,12 +2297,7 @@ Write
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="p">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">).</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'output.txt'</span><span class="p">).</span><span class="nb">open</span><span class="p">(</span><span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">'Some glorious content'</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'></pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
@@ -2473,12 +2336,7 @@ Get working dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">())</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">());</span>
@@ -2497,10 +2355,7 @@ File path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
@@ -2519,12 +2374,7 @@ Dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="p">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">).</span><span class="n">parent</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">);</span>
@@ -2543,12 +2393,7 @@ Parent dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="p">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">).</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">);</span>
@@ -2568,12 +2413,7 @@ Sister dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="p">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">).</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">);</span>
@@ -2594,10 +2434,10 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">hey</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-<span class="n">hey</span><span class="p">()</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="nf">hey</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"How are you?"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">hey</span><span class="p">()</span></code></pre></div>
 <pre class='unstyled output text-muted'>How are you?
 </pre>
 </div>
@@ -2621,12 +2461,11 @@ Multiple arguments
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">buy</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">brands</span><span class="p">)</span>
-<span class="n">sweets</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>(&#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27;)
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">:</span> <span class="nc">Boolean</span><span class="p">,</span> <span class="k">vararg</span> <span class="n">brands</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buy</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="n">brands</span><span class="p">.</span><span class="nf">joinToString</span><span class="p">(</span><span class="s">" "</span><span class="p">))</span>
+<span class="p">}</span>
+<span class="nf">sweets</span><span class="p">(</span><span class="k">true</span><span class="p">,</span> <span class="s">"snickers"</span><span class="p">,</span> <span class="s">"twix"</span><span class="p">,</span> <span class="s">"bounty"</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>snickers twix bounty
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2649,11 +2488,11 @@ Default value for argument
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Send abroad'</span> <span class="k">if</span> <span class="n">abroad</span> <span class="k">else</span> <span class="s">'Send locally'</span><span class="p">)</span>
-<span class="n">send</span><span class="p">()</span>
-<span class="n">send</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span><span class="p">:</span> <span class="nc">Boolean</span> <span class="p">=</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="n">abroad</span><span class="p">)</span> <span class="s">"Send abroad"</span> <span class="k">else</span> <span class="s">"Send locally"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">send</span><span class="p">()</span>
+<span class="nf">send</span><span class="p">(</span><span class="k">true</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>Send locally
 Send abroad
 </pre>
@@ -2680,22 +2519,24 @@ Return
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="nf">multiple</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="p">*</span> <span class="n">b</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="k">fun</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="p">/</span> <span class="n">b</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 
-<span class="k">def</span> <span class="nf">default_value</span><span class="p">():</span>
-    <span class="k">pass</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">default_value</span><span class="p">())</span>
+<span class="k">fun</span> <span class="nf">defaultValue</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">defaultValue</span><span class="p">())</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>6
 0
-None
+kotlin.Unit
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2727,12 +2568,11 @@ Closure
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])))</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">square</span> <span class="p">=</span> <span class="p">{</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="p">*</span> <span class="n">x</span> <span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span><span class="nf">map</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">'Hello World!'</span><span class="p">)</span>
-<span class="n">greeting</span><span class="p">()</span>
-</code></pre></div>
+<span class="kd">val</span> <span class="py">greeting</span> <span class="p">=</span> <span class="p">{</span> <span class="nf">println</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span> <span class="p">}</span>
+<span class="nf">greeting</span><span class="p">()</span></code></pre></div>
 <pre class='unstyled output text-muted'>[4, 9]
 Hello World!
 </pre>
@@ -2759,19 +2599,17 @@ Block passing
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-    <span class="k">yield</span> <span class="k">from</span> <span class="n">arr</span>
-
-<span class="k">def</span> <span class="nf">select_filter</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="nb">filter</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">filter</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-            <span class="k">yield</span> <span class="n">a</span>
-
-<span class="k">print</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">select</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">select_filter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)))</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">fun</span> <span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;</span> <span class="nf">mySelect</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="nc">List</span><span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;,</span> <span class="n">predicate</span><span class="p">:</span> <span class="p">(</span><span class="nc">T</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nc">Boolean</span><span class="p">):</span> <span class="nc">List</span><span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;</span> <span class="p">{</span>
+  <span class="kd">val</span> <span class="py">selected</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="nc">T</span><span class="p">&gt;()</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">a</span> <span class="k">in</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nf">predicate</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">selected</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">selected</span>
+<span class="p">}</span>
+<span class="nf">println</span><span class="p">(</span><span class="nf">mySelect</span><span class="p">(</span><span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> <span class="p">{</span> <span class="n">it</span> <span class="p">&lt;</span> <span class="mi">6</span> <span class="p">})</span></code></pre></div>
 <pre class='unstyled output text-muted'>[1, 5]
-[1, 5]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2798,23 +2636,22 @@ Block binding
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Action</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="s">'Ann'</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Action</span> <span class="p">{</span>
+  <span class="k">companion</span> <span class="k">object</span> <span class="p">{</span>
+    <span class="k">private</span> <span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span> <span class="p">=</span> <span class="s">"Ann"</span>
+    <span class="k">fun</span> <span class="nf">say</span><span class="p">(</span><span class="n">sentence</span><span class="p">:</span> <span class="p">()</span> <span class="p">-&gt;</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">println</span><span class="p">(</span><span class="nf">sentence</span><span class="p">())</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  <span class="o">@</span><span class="nb">staticmethod</span>
-  <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">sentence</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">())</span>
+<span class="kd">class</span> <span class="nc">Person</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nc">Action</span><span class="p">.</span><span class="nf">say</span> <span class="p">{</span> <span class="s">"My name is $name!"</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-
-<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-
-  <span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">Action</span><span class="p">.</span><span class="n">say</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="s">"My name is %s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
-
-
-<span class="n">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="n">greet</span><span class="p">()</span>
+<span class="nc">Person</span><span class="p">(</span><span class="s">"Alex"</span><span class="p">).</span><span class="nf">greet</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>My name is Alex!
 </pre>
@@ -2849,39 +2686,6 @@ My name is Alex!
 </div>
 </div>
 <h4 class='compare-header4'>
-Initialize in runtime
-<small>
-<a class='link-unstyled' href='#method_initialize_in_runtime' id='method_initialize_in_runtime'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">ProccessElements</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">):</span>
-      <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">'&lt;{0}&gt;{1}&lt;/{0}&gt;'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">el_name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-      <span class="k">return</span> <span class="n">render</span>
-
-    <span class="k">for</span> <span class="n">el_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">elements</span><span class="p">:</span>
-      <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">el_name</span><span class="p">,</span> <span class="n">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">))</span>
-
-
-<span class="k">class</span> <span class="nc">HtmlELements</span><span class="p">(</span><span class="n">ProccessElements</span><span class="p">):</span>
-  <span class="n">elements</span> <span class="o">=</span> <span class="p">(</span><span class="s">'div'</span><span class="p">,</span> <span class="s">'span'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">HtmlELements</span><span class="p">().</span><span class="n">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Alias
 <small>
 <a class='link-unstyled' href='#method_alias' id='method_alias'>
@@ -2891,12 +2695,14 @@ Alias
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Greetings</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">hey</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-  <span class="n">hi</span> <span class="o">=</span> <span class="n">hey</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Greetings</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">hey</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"How are you?"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Greetings</span><span class="p">().</span><span class="n">hi</span><span class="p">()</span>
+<span class="kd">val</span> <span class="py">greetings</span> <span class="p">=</span> <span class="nc">Greetings</span><span class="p">()</span>
+<span class="n">greetings</span><span class="p">.</span><span class="nf">hey</span><span class="p">().</span><span class="nf">also</span> <span class="p">{</span> <span class="n">greetings</span><span class="o">::</span><span class="n">hey</span> <span class="p">}</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>How are you?
 </pre>
@@ -2929,11 +2735,13 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">().</span><span class="n">walk</span><span class="p">()</span>
+<span class="nc">Animal</span><span class="p">().</span><span class="nf">walk</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking
 </pre>
@@ -2961,14 +2769,13 @@ Constructor
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"My name is $name and I'm walking"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"My name is %s and I'm walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
-
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">).</span><span class="n">walk</span><span class="p">()</span>
+<span class="nc">Animal</span><span class="p">(</span><span class="s">"Kelya"</span><span class="p">).</span><span class="nf">walk</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
 </pre>
@@ -3000,20 +2807,23 @@ Method call
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">bark</span><span class="p">()</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">_guard</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">bark</span><span class="p">()</span>
+    <span class="nf">guard</span><span class="p">()</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Wuf!'</span><span class="p">)</span>
+  <span class="k">private</span> <span class="k">fun</span> <span class="nf">bark</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Wuf!"</span><span class="p">)</span>
+  <span class="p">}</span>
 
-  <span class="c1"># Private by convention
-</span>  <span class="k">def</span> <span class="nf">_guard</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'WUUUF!'</span><span class="p">)</span>
+  <span class="k">private</span> <span class="k">fun</span> <span class="nf">guard</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"WUUUF!"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">().</span><span class="n">walk</span><span class="p">()</span>
+<span class="nc">Animal</span><span class="p">().</span><span class="nf">walk</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Wuf!
 WUUUF!
@@ -3049,12 +2859,13 @@ Class method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="o">@</span><span class="nb">classmethod</span>
-  <span class="k">def</span> <span class="nf">feed</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">object</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">feed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Om nom nom"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">.</span><span class="n">feed</span><span class="p">()</span>
+<span class="nc">Animal</span><span class="p">.</span><span class="nf">feed</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom
 </pre>
@@ -3082,15 +2893,15 @@ Private method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">_is_meat</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
-      <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">eat</span><span class="p">(</span><span class="n">food</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nf">meat</span><span class="p">(</span><span class="n">food</span><span class="p">))</span> <span class="nf">println</span><span class="p">(</span><span class="s">"Om nom nom"</span><span class="p">)</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">_is_meat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">food</span> <span class="o">==</span> <span class="s">'meat'</span>
+  <span class="k">private</span> <span class="k">fun</span> <span class="nf">meat</span><span class="p">(</span><span class="n">food</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">=</span> <span class="n">food</span> <span class="p">==</span> <span class="s">"meat"</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">().</span><span class="n">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
+<span class="nc">Animal</span><span class="p">().</span><span class="nf">eat</span><span class="p">(</span><span class="s">"meat"</span><span class="p">)</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom
 </pre>
@@ -3109,17 +2920,20 @@ Private method, access instance variable
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">_greet</span><span class="p">()</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">init</span> <span class="p">{</span>
+    <span class="nf">greet</span><span class="p">()</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">_greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hello! My name is %s"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+  <span class="k">private</span> <span class="k">fun</span> <span class="nf">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Hello! My name is $name"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">)</span>
+<span class="nc">Animal</span><span class="p">(</span><span class="s">"Kelya"</span><span class="p">)</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Hello! My name is Kelya
+Class_private_method_access_instance_var$Animal@b0d3e7
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3136,17 +2950,21 @@ Field
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">toy</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">toy</span> <span class="o">=</span> <span class="n">toy</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="kd">var</span> <span class="py">toy</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 
-  <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm playing with %s"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">toy</span><span class="p">)</span>
+  <span class="k">fun</span> <span class="nf">take</span><span class="p">(</span><span class="n">toy</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">toy</span> <span class="p">=</span> <span class="n">toy</span>
+  <span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="p">.</span><span class="n">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
-<span class="n">animal</span><span class="p">.</span><span class="n">play</span><span class="p">()</span>
-</code></pre></div>
+  <span class="k">fun</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"I'm playing with $toy"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">val</span> <span class="py">animal</span> <span class="p">=</span> <span class="nc">Animal</span><span class="p">()</span>
+<span class="n">animal</span><span class="p">.</span><span class="nf">take</span><span class="p">(</span><span class="s">"a ball"</span><span class="p">)</span>
+<span class="n">animal</span><span class="p">.</span><span class="nf">play</span><span class="p">()</span></code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
 </pre>
 </div>
@@ -3179,12 +2997,10 @@ Get/set
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="bp">None</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span><span class="p">(</span><span class="kd">var</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">animal</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="kd">val</span> <span class="py">animal</span> <span class="p">=</span> <span class="nc">Animal</span><span class="p">(</span><span class="s">"Kelya"</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">animal</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Kelya
 </pre>
@@ -3218,15 +3034,19 @@ Inheritance
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">open</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-  <span class="k">def</span> <span class="nf">sing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Bark!'</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="p">:</span> <span class="nc">Animal</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">sing</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Bark!"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Dog</span><span class="p">().</span><span class="n">walk</span><span class="p">()</span>
+<span class="nc">Dog</span><span class="p">().</span><span class="nf">walk</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking
 </pre>
@@ -3260,20 +3080,23 @@ Mixin
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Moving</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"%s is walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">__class__</span><span class="p">.</span><span class="n">__name__</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">interface</span> <span class="nc">Moving</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"${this::class.simpleName} is walking"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Interacting</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"%s is talking"</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">__class__</span><span class="p">.</span><span class="n">__name__</span><span class="p">)</span>
+<span class="kd">interface</span> <span class="nc">Interacting</span> <span class="p">{</span>
+  <span class="k">fun</span> <span class="nf">talk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"${this::class.simpleName} is talking"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Human</span><span class="p">(</span><span class="n">Moving</span><span class="p">,</span> <span class="n">Interacting</span><span class="p">):</span>
-    <span class="k">pass</span>
+<span class="kd">class</span> <span class="nc">Human</span> <span class="p">:</span> <span class="nc">Moving</span><span class="p">,</span> <span class="nc">Interacting</span>
 
-<span class="n">human</span> <span class="o">=</span> <span class="n">Human</span><span class="p">()</span>
-<span class="n">human</span><span class="p">.</span><span class="n">walk</span><span class="p">()</span>
-<span class="n">human</span><span class="p">.</span><span class="n">talk</span><span class="p">()</span>
+<span class="kd">val</span> <span class="py">human</span> <span class="p">=</span> <span class="nc">Human</span><span class="p">()</span>
+<span class="n">human</span><span class="p">.</span><span class="nf">walk</span><span class="p">()</span>
+<span class="n">human</span><span class="p">.</span><span class="nf">talk</span><span class="p">()</span>
 </code></pre></div>
 <pre class='unstyled output text-muted'>Human is walking
 Human is talking
@@ -3293,14 +3116,15 @@ Has method?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="s">'walk'</span><span class="p">))</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>True
+<span class="kd">val</span> <span class="py">animal</span> <span class="p">=</span> <span class="nc">Animal</span><span class="p">()</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">animal</span><span class="o">::</span><span class="n">walk</span> <span class="k">is</span> <span class="nc">Function0</span><span class="p">&lt;</span><span class="err">*</span><span class="p">&gt;)</span></code></pre></div>
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3328,8 +3152,8 @@ Comment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="c1"># it's a comment
-</span></code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="c1">// it's a comment</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
@@ -3348,11 +3172,38 @@ Assign value if not exist
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">speed</span> <span class="o">=</span> <span class="mi">15</span> <span class="k">if</span> <span class="n">speed</span> <span class="ow">is</span> <span class="bp">None</span> <span class="k">else</span> <span class="n">speed</span>
-<span class="k">print</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">speed</span><span class="p">:</span> <span class="nc">Int</span><span class="p">?</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">speed</span> <span class="o">?:</span> <span class="mi">15</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>0
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+</div>
+</div>
+<h4 class='compare-header4'>
+Safe navigation
+<small>
+<a class='link-unstyled' href='#other_safe_navigation' id='other_safe_navigation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Winner</span> <span class="p">{</span>
+  <span class="kd">val</span> <span class="py">address</span><span class="p">:</span> <span class="nc">Address</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Address</span> <span class="p">{</span>
+  <span class="kd">val</span> <span class="py">zipcode</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">192187</span>
+<span class="p">}</span>
+
+<span class="kd">val</span> <span class="py">winner</span> <span class="p">=</span> <span class="nc">Winner</span><span class="p">()</span>
+<span class="kd">val</span> <span class="py">zip</span> <span class="p">=</span> <span class="n">winner</span><span class="p">.</span><span class="n">address</span><span class="o">?.</span><span class="n">zipcode</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">zip</span><span class="o">?.</span><span class="nf">let</span> <span class="p">{</span> <span class="s">"Zipcode is $it"</span> <span class="p">}</span> <span class="o">?:</span> <span class="s">"No prize without zipcode"</span><span class="p">)</span>
+</code></pre></div>
+<pre class='unstyled output text-muted'>No prize without zipcode
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3369,16 +3220,7 @@ Import another file
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="c1"># other_file_to_import.py
-# class Import:
-#   def __init__(self):
-#     print('I am imported!')
-</span>
-<span class="kn">import</span> <span class="nn">other_file_to_import</span>
-<span class="n">other_file_to_import</span><span class="p">.</span><span class="n">Import</span><span class="p">()</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>I am imported!
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="c1">// other-file-to-import.js</span>
@@ -3406,10 +3248,11 @@ Destructuring assignment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
-<span class="k">print</span><span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">)</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>1 2
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="p">(</span><span class="py">one</span><span class="p">,</span> <span class="py">two</span><span class="p">)</span> <span class="p">=</span> <span class="nf">listOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">one</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">two</span><span class="p">)</span></code></pre></div>
+<pre class='unstyled output text-muted'>1
+2
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3430,10 +3273,9 @@ Date
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">date</span><span class="p">.</span><span class="n">today</span><span class="p">())</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>2024-05-28
+<div class="highlight"><pre class="highlight kotlin"><code><span class="k">import</span> <span class="nn">java.time.LocalDate</span>
+<span class="nf">println</span><span class="p">(</span><span class="nc">LocalDate</span><span class="p">.</span><span class="nf">now</span><span class="p">())</span></code></pre></div>
+<pre class='unstyled output text-muted'>2024-06-21
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3458,10 +3300,8 @@ Time
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">())</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>2024-05-28 20:18:14.644332
+<div class="highlight"><pre class="highlight kotlin"><code><span class="nf">println</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="n">time</span><span class="p">.</span><span class="nc">LocalDateTime</span><span class="p">.</span><span class="nf">now</span><span class="p">())</span></code></pre></div>
+<pre class='unstyled output text-muted'>2024-06-21T22:23:27.993365
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3481,10 +3321,8 @@ Not
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">angry</span> <span class="p">=</span> <span class="k">false</span>
+<span class="k">if</span> <span class="p">(!</span><span class="n">angry</span><span class="p">)</span> <span class="nf">println</span><span class="p">(</span><span class="s">"smile!"</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>smile!
 </pre>
 </div>
@@ -3506,10 +3344,9 @@ Assign this or that
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="n">yeti</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="ow">or</span> <span class="s">'bear'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">footprints</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre class="highlight kotlin"><code><span class="kd">val</span> <span class="py">yeti</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+<span class="kd">val</span> <span class="py">footprints</span> <span class="p">=</span> <span class="n">yeti</span> <span class="o">?:</span> <span class="s">"bear"</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">footprints</span><span class="p">)</span></code></pre></div>
 <pre class='unstyled output text-muted'>bear
 </pre>
 </div>
@@ -3527,11 +3364,7 @@ Run command
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="n">subprocess</span><span class="p">.</span><span class="n">call</span><span class="p">([</span><span class="s">'python3'</span><span class="p">,</span> <span class="s">'--version'</span><span class="p">])</span>
-</code></pre></div>
-<pre class='unstyled output text-muted'>Python 3.11.2
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>

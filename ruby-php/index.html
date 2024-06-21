@@ -4,7 +4,7 @@
 <meta charset='utf-8'>
 <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
 <title>Language compare</title>
-<link href="../stylesheets/all-55fa2a80.css" rel="stylesheet" /><link href="../stylesheets/syntax-d739a89d.css" rel="stylesheet" />
+<link href="../stylesheets/all-2cce3b91.css" rel="stylesheet" /><link href="../stylesheets/syntax-a7a497f1.css" rel="stylesheet" />
 </head>
 <body>
 <div id='top'></div>
@@ -39,6 +39,9 @@
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
 </li>
+<li class='lang-item' data-lang-url='kotlin'>
+<a href="#">Kotlin</a>
+</li>
 </ul>
 </div>
 </div>
@@ -63,6 +66,9 @@
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
+</li>
+<li class='lang-item' data-lang-url='kotlin'>
+<a href="#">Kotlin</a>
 </li>
 </ul>
 </div>
@@ -518,20 +524,18 @@ Create
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span>
 <span class="nb">puts</span> <span class="n">greeting</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello World!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$greeting</span> <span class="o">=</span> <span class="s2">"Hello World!"</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$greeting</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello World!</pre>
 </div>
 </div>
@@ -545,18 +549,16 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s2">"Don't worry,"</span> <span class="o">+</span> <span class="s1">' be happy'</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s2">"Don't worry,"</span> <span class="o">+</span> <span class="s1">' be happy'</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="s2">"Don't worry,"</span> <span class="o">.</span> <span class="s2">" be happy"</span><span class="p">;</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="s2">"Don't worry,"</span> <span class="mf">.</span> <span class="s2">" be happy"</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
 </div>
 </div>
@@ -570,22 +572,20 @@ Interpolation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span>
 <span class="n">second</span> <span class="o">=</span> <span class="s1">'be happy'</span>
 <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">first</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">second</span><span class="si">}</span><span class="s2">"</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
 <span class="nv">$second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
 <span class="k">echo</span> <span class="s2">"</span><span class="nv">$first</span><span class="s2"> </span><span class="nv">$second</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
 </div>
 </div>
@@ -599,20 +599,18 @@ Remove part
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'not '</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'not '</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>This is funny! I am like him!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$s</span> <span class="o">=</span> <span class="s2">"This is not funny! I am not like him!"</span><span class="p">;</span>
 <span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"not "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>This is funny! I am like him!</pre>
 </div>
 </div>
@@ -626,20 +624,18 @@ Replace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'You should work'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'work'</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'You should work'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'work'</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>You should rest
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$s</span> <span class="o">=</span> <span class="s2">"You should work"</span><span class="p">;</span>
 <span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"rest"</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>You should rest</pre>
 </div>
 </div>
@@ -653,22 +649,20 @@ Split
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'I like beer'</span><span class="p">.</span><span class="nf">split</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'I like beer'</span><span class="p">.</span><span class="nf">split</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>I
 like
 beer
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$s</span> <span class="o">=</span> <span class="s2">"I like beer"</span><span class="p">;</span>
 <span class="nv">$arr</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
 <span class="nb">var_export</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>array (
   0 =&gt; &#x27;I&#x27;,
   1 =&gt; &#x27;like&#x27;,
@@ -686,17 +680,15 @@ Remove leading and trailing whitespace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">' eh? '</span><span class="p">.</span><span class="nf">strip</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">' eh? '</span><span class="p">.</span><span class="nf">strip</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>eh?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">trim</span><span class="p">(</span><span class="s2">" eh? "</span><span class="p">);</span></code></pre>
-
+<span class="k">echo</span> <span class="nb">trim</span><span class="p">(</span><span class="s2">" eh? "</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>eh?</pre>
 </div>
 </div>
@@ -710,19 +702,17 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">==</span> <span class="s1">'string'</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">==</span> <span class="s1">'string'</span>
 <span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">!=</span> <span class="s1">'string'</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 false
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">strcmp</span><span class="p">(</span><span class="s2">"string"</span><span class="p">,</span> <span class="s2">"string"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">strcmp</span><span class="p">(</span><span class="s2">"string"</span><span class="p">,</span> <span class="s2">"string"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 </pre>
 </div>
@@ -737,21 +727,19 @@ Regex
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^b/</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^b/</span>
 <span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^a/</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>nil
 0
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^b/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^a/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(false)
 bool(true)
 </pre>
@@ -768,22 +756,20 @@ Increment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="nb">puts</span> <span class="n">i</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
 <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>10</pre>
 </div>
 </div>
@@ -797,24 +783,22 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span>
 <span class="nb">puts</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 true
 false
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">var_dump</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 bool(true)
 bool(false)
@@ -831,17 +815,15 @@ Random
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre>
-
+<span class="k">echo</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>1</pre>
 </div>
 </div>
@@ -855,12 +837,11 @@ Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">floor</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">round</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">).</span><span class="nf">floor</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">).</span><span class="nf">round</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>4
 4.5
 4
@@ -868,14 +849,13 @@ Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>float(4.5)
 float(4.5)
 float(4)
@@ -894,22 +874,20 @@ Get type of object
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'hi'</span><span class="p">.</span><span class="nf">class</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'hi'</span><span class="p">.</span><span class="nf">class</span>
 <span class="nb">puts</span> <span class="mi">1</span><span class="p">.</span><span class="nf">class</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>String
 Fixnum
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">get_class</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="k">new</span> <span class="nc">DateTime</span><span class="p">())</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">get_class</span><span class="p">(</span><span class="k">new</span> <span class="nc">DateTime</span><span class="p">())</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>string
 object
 DateTime
@@ -926,18 +904,16 @@ Int to Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_f</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_f</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>10.0
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">float</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
-</code></pre>
-
+<span class="nb">var_dump</span><span class="p">((</span><span class="n">float</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>float(10)
 </pre>
 </div>
@@ -952,18 +928,16 @@ Int to String
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_s</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_s</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">string</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
-</code></pre>
-
+<span class="nb">var_dump</span><span class="p">((</span><span class="n">string</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>string(2) &quot;10&quot;
 </pre>
 </div>
@@ -978,18 +952,16 @@ String to Int
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'5'</span><span class="p">.</span><span class="nf">to_i</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'5'</span><span class="p">.</span><span class="nf">to_i</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>5
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="s2">"10"</span><span class="p">);</span>
-</code></pre>
-
+<span class="nb">var_dump</span><span class="p">((</span><span class="n">int</span><span class="p">)</span><span class="s2">"10"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>int(10)
 </pre>
 </div>
@@ -1004,19 +976,17 @@ String?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'10'</span><span class="p">.</span><span class="nf">is_a?</span> <span class="no">String</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'10'</span><span class="p">.</span><span class="nf">is_a?</span> <span class="no">String</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">is_string</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">));</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">()</span> <span class="nx">instanceof</span> <span class="nx">DateTime</span><span class="p">);</span>
-</code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="k">new</span> <span class="nc">DateTime</span><span class="p">()</span> <span class="k">instanceof</span> <span class="nc">DateTime</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 bool(true)
 </pre>
@@ -1032,7 +1002,7 @@ Null/True/False?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="n">label</span>
   <span class="n">values</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">value</span><span class="o">|</span>
     <span class="k">begin</span>
@@ -1050,8 +1020,7 @@ Null/True/False?
 <span class="n">check</span><span class="p">(</span><span class="s1">'if value:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
 <span class="n">check</span><span class="p">(</span><span class="s1">'if value.nil?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">nil?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
 <span class="n">check</span><span class="p">(</span><span class="s1">'if value.empty?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">empty?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>if value:
   &quot;string&quot;  - true
   &quot;&quot;        - true
@@ -1088,7 +1057,7 @@ if value.empty?:
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$notEmpty</span> <span class="o">=</span> <span class="s2">"Not empty"</span><span class="p">;</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$notEmpty</span><span class="p">));</span>
@@ -1098,8 +1067,7 @@ if value.empty?:
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(false)
 bool(true)
 bool(true)
@@ -1117,20 +1085,18 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(first second)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(first second)</span>
 <span class="nb">puts</span> <span class="n">arr</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>first
 second
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"first"</span><span class="p">,</span> <span class="s2">"second"</span><span class="p">];</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
-
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; first
@@ -1149,25 +1115,23 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'first'</span>
 <span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'second'</span>
 <span class="nb">puts</span> <span class="n">arr</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>first
 second
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$myArr</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"first"</span><span class="p">;</span>
 <span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"second"</span><span class="p">;</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$myArr</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; first
@@ -1186,19 +1150,17 @@ With different types
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>first
 1
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">print_r</span><span class="p">([</span><span class="s2">"first"</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; first
@@ -1217,18 +1179,16 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">include?</span> <span class="mi">1</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">include?</span> <span class="mi">1</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nb">var_dump</span><span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]));</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 </pre>
 </div>
@@ -1243,22 +1203,20 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">num</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 2
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">foreach</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$num</span><span class="p">)</span> <span class="p">{</span>
     <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$num</span><span class="p">);</span>
-<span class="p">}</span></code></pre>
-
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>int(1)
 int(2)
 </pre>
@@ -1274,12 +1232,11 @@ Iterate with index
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="sx">%w(one two)</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="sx">%w(one two)</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">num</span>
   <span class="nb">puts</span> <span class="n">i</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>one
 0
 two
@@ -1287,14 +1244,13 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span></code></pre>
-
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>fontSize
 10
 fontFamily
@@ -1312,22 +1268,20 @@ Get first, last element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(one two)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(one two)</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">first</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">last</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>one
 two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"one"</span><span class="p">,</span> <span class="s2">"two"</span><span class="p">];</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span></code></pre></div>
 <pre class='unstyled output text-muted'>string(3) &quot;one&quot;
 string(3) &quot;two&quot;
 </pre>
@@ -1343,15 +1297,14 @@ Find first
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
 <span class="nv">$first</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -1361,8 +1314,7 @@ Find first
         <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$first</span><span class="p">);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$first</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>int(10)
 </pre>
 </div>
@@ -1377,24 +1329,22 @@ Select (find all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>10
 20
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
 <span class="nv">$filtered</span> <span class="o">=</span> <span class="nb">array_filter</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nv">$n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">});</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$filtered</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [2] =&gt; 10
@@ -1413,10 +1363,9 @@ Map (change all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>2
 10
 20
@@ -1424,14 +1373,13 @@ Map (change all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
 <span class="nv">$mapped</span> <span class="o">=</span> <span class="nb">array_map</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nv">$n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
 <span class="p">},</span> <span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$mapped</span><span class="p">);</span></code></pre>
-
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$mapped</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; 2
@@ -1452,9 +1400,8 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 2
 3
@@ -1462,14 +1409,13 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
 <span class="nv">$arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
 <span class="nv">$concated</span> <span class="o">=</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$arr1</span><span class="p">,</span> <span class="nv">$arr2</span><span class="p">);</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$concated</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; 1
@@ -1490,9 +1436,8 @@ Sort
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nf">sort</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nf">sort</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 2
 3
@@ -1500,12 +1445,11 @@ Sort
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">];</span>
 <span class="nb">sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
-
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; 1
@@ -1526,19 +1470,17 @@ Multidimensional
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[</span><span class="sx">%w(first second)</span><span class="p">,</span> <span class="sx">%w(third forth)</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[</span><span class="sx">%w(first second)</span><span class="p">,</span> <span class="sx">%w(third forth)</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>forth
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span></code></pre></div>
 <pre class='unstyled output text-muted'>string(5) &quot;forth&quot;
 </pre>
 </div>
@@ -1553,18 +1495,16 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">size</span> 
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">size</span> 
+</code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span></code></pre></div>
 <pre class='unstyled output text-muted'>int(3)
 </pre>
 </div>
@@ -1579,23 +1519,21 @@ Count
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
 <span class="nv">$count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$n</span><span class="p">)</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
         <span class="nv">$count</span><span class="o">++</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$count</span><span class="p">);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$count</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>int(2)
 </pre>
 </div>
@@ -1610,21 +1548,19 @@ Reduce
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">+</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">+</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>6
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
 <span class="nv">$reduced</span> <span class="o">=</span> <span class="nb">array_reduce</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$carry</span><span class="p">,</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nv">$carry</span> <span class="o">+</span> <span class="nv">$item</span><span class="p">;</span>
 <span class="p">});</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$reduced</span><span class="p">);</span></code></pre>
-
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$reduced</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>6</pre>
 </div>
 </div>
@@ -1638,18 +1574,16 @@ Index of element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="s1">'c'</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="s1">'c'</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">array_search</span><span class="p">(</span><span class="s2">"c"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">));</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">array_search</span><span class="p">(</span><span class="s2">"c"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">));</span></code></pre></div>
 <pre class='unstyled output text-muted'>int(2)
 </pre>
 </div>
@@ -1664,24 +1598,22 @@ Delete element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(a b c)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(a b c)</span>
 <span class="n">arr</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="n">arr</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>a
 c
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
 <span class="nv">$key</span> <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">unset</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$key</span><span class="p">]);</span>
+<span class="k">unset</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$key</span><span class="p">]);</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; a
@@ -1700,20 +1632,18 @@ Unique
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sx">%w(a b a)</span><span class="p">.</span><span class="nf">uniq</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sx">%w(a b a)</span><span class="p">.</span><span class="nf">uniq</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>a
 b
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">];</span>
 <span class="nv">$unique</span> <span class="o">=</span> <span class="nb">array_unique</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$unique</span><span class="p">);</span></code></pre>
-
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$unique</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>Array
 (
     [0] =&gt; a
@@ -1733,19 +1663,17 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">options</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>array(2) {
   [&quot;fontSize&quot;]=&gt;
   string(2) &quot;10&quot;
@@ -1765,23 +1693,21 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">options</span><span class="p">[</span><span class="ss">:font_family</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Arial'</span>
 <span class="nb">puts</span> <span class="n">options</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"10"</span><span class="p">;</span>
 <span class="nv">$options</span><span class="p">[</span><span class="s2">"fontFamily"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Arial"</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>array(2) {
   [&quot;fontSize&quot;]=&gt;
   string(2) &quot;10&quot;
@@ -1801,11 +1727,10 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>font_size
 10
 font_family
@@ -1813,14 +1738,13 @@ Arial
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span></code></pre>
-
+<span class="p">}</span></code></pre></div>
 <pre class='unstyled output text-muted'>fontSize
 10
 fontFamily
@@ -1838,19 +1762,17 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">include?</span> <span class="ss">:font_size</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">key_exists</span><span class="p">(</span><span class="s2">"fontSize"</span><span class="p">,</span> <span class="nv">$options</span><span class="p">));</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">key_exists</span><span class="p">(</span><span class="s2">"fontSize"</span><span class="p">,</span> <span class="nv">$options</span><span class="p">));</span></code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 </pre>
 </div>
@@ -1865,19 +1787,17 @@ Get value
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]);</span></code></pre>
-
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]);</span></code></pre></div>
 <pre class='unstyled output text-muted'>string(2) &quot;10&quot;
 </pre>
 </div>
@@ -1892,19 +1812,17 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">size</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>2
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="k">echo</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
+<span class="k">echo</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>2</pre>
 </div>
 </div>
@@ -1919,21 +1837,19 @@ Boolean
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">try_it</span> <span class="o">=</span> <span class="kp">true</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">try_it</span> <span class="o">=</span> <span class="kp">true</span>
 <span class="nb">puts</span> <span class="s1">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="n">try_it</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Garlic gum is not funny
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$tryIt</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="nv">$tryIt</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"Garlic gum is not funny"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Garlic gum is not funny</pre>
 </div>
 </div>
@@ -1947,24 +1863,22 @@ Constant
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="nb">puts</span> <span class="no">COST</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
 &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
 50
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">COST</span><span class="p">;</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="no">COST</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>PHP Warning:  Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
 
 Warning: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
@@ -1981,13 +1895,12 @@ Constant list
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Colors</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Colors</span>
   <span class="no">RED</span> <span class="o">=</span> <span class="s1">'#FF0000'</span>
   <span class="no">GREEN</span> <span class="o">=</span> <span class="s1">'#00FF00'</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="no">Colors</span><span class="o">::</span><span class="no">GREEN</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>#00FF00
 </pre>
 </div>
@@ -2005,15 +1918,14 @@ Struct
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
   <span class="k">def</span> <span class="nf">greeting</span>
     <span class="s2">"Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!"</span>
   <span class="k">end</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="no">Customer</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Dave'</span><span class="p">,</span> <span class="s1">'123 Main'</span><span class="p">).</span><span class="nf">greeting</span>
 
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello Dave!
 </pre>
 </div>
@@ -2032,19 +1944,17 @@ If
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'Hello'</span> <span class="k">if</span> <span class="kp">true</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'Hello'</span> <span class="k">if</span> <span class="kp">true</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"Hello"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello</pre>
 </div>
 </div>
@@ -2058,21 +1968,19 @@ Unless
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
 <span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">unless</span> <span class="n">angry</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>smile!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>smile!</pre>
 </div>
 </div>
@@ -2086,25 +1994,23 @@ If/else
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">if</span> <span class="kp">true</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">if</span> <span class="kp">true</span>
   <span class="nb">puts</span> <span class="s1">'work'</span>
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s1">'sleep'</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>work
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"work"</span><span class="p">;</span>
 <span class="k">else</span>
     <span class="k">echo</span> <span class="s2">"sleep"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>work</pre>
 </div>
 </div>
@@ -2118,22 +2024,20 @@ And/Or
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'no'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">false</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'no'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">false</span>
 <span class="nb">puts</span> <span class="s1">'yes'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">||</span> <span class="kp">false</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>yes
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"no"</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"yes"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>yes</pre>
 </div>
 </div>
@@ -2147,9 +2051,9 @@ Switch
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span>
 <span class="k">case</span> <span class="n">foo</span>
-<span class="k">when</span> <span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">5</span>
+<span class="k">when</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span>
   <span class="nb">puts</span> <span class="s2">"It's between 1 and 5"</span>
 <span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
   <span class="nb">puts</span> <span class="s1">'10 or 20'</span>
@@ -2159,13 +2063,12 @@ Switch
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s2">"You gave me '</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">'"</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$s</span> <span class="o">=</span> <span class="s2">"Hello!"</span><span class="p">;</span>
 <span class="k">switch</span> <span class="p">(</span><span class="nv">$s</span><span class="p">)</span> <span class="p">{</span>
@@ -2178,8 +2081,7 @@ Switch
     <span class="k">default</span><span class="o">:</span>
         <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>right</pre>
 </div>
 </div>
@@ -2193,7 +2095,7 @@ Switch as else if
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
 <span class="n">grade</span> <span class="o">=</span> <span class="k">case</span>
         <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s1">'F'</span>
         <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s1">'D'</span>
@@ -2202,8 +2104,7 @@ Switch as else if
         <span class="k">else</span> <span class="s1">'A'</span>
         <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">grade</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>C
 </pre>
 </div>
@@ -2221,19 +2122,17 @@ Ternary
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>yes
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$s</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">?</span> <span class="s2">"no"</span> <span class="o">:</span> <span class="s2">"yes"</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$s</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>yes</pre>
 </div>
 </div>
@@ -2247,7 +2146,7 @@ If assign
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">result</span> <span class="o">=</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">result</span> <span class="o">=</span>
 <span class="k">if</span> <span class="kp">true</span>
   <span class="s1">'a'</span>
 <span class="k">else</span>
@@ -2255,8 +2154,7 @@ If assign
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">result</span>
 
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>a
 </pre>
 </div>
@@ -2275,23 +2173,21 @@ For
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">3</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">. Hi"</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
 3. Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+    <span class="k">echo</span> <span class="nv">$i</span> <span class="mf">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
 3. Hi
@@ -2308,23 +2204,21 @@ For with a step
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="nf">.</span><span class="mi">4</span><span class="p">).</span><span class="nf">step</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="mi">4</span><span class="p">).</span><span class="nf">step</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">i</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>0
 2
 4
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+    <span class="k">echo</span> <span class="nv">$i</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>0
 2
 4
@@ -2341,23 +2235,21 @@ Times
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
   <span class="nb">puts</span> <span class="s1">'Hi'</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hi
 Hi
 Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hi
 Hi
 Hi
@@ -2374,25 +2266,23 @@ While
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
   <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">i</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
     <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>3</pre>
 </div>
 </div>
@@ -2406,23 +2296,21 @@ Until
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">until</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="n">i</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>3
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span>
     <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>3</pre>
 </div>
 </div>
@@ -2436,12 +2324,11 @@ Return array
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
   <span class="s2">"</span><span class="si">#{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">greetings</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hello!
 2. Hello!
 3. Hello!
@@ -2461,26 +2348,24 @@ Break
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
   <span class="k">break</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 2. Hi
 </pre>
@@ -2496,26 +2381,24 @@ Next/Continue
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
   <span class="k">next</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
   <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 3. Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">continue</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1. Hi
 3. Hi
 </pre>
@@ -2532,22 +2415,20 @@ Max/Min
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">min</span>
 <span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">max</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 3
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="k">echo</span> <span class="nb">min</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">max</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span></code></pre>
-
+<span class="k">echo</span> <span class="nb">min</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">max</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span></code></pre></div>
 <pre class='unstyled output text-muted'>1
 3
 </pre>
@@ -2563,18 +2444,16 @@ Sqrt
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>3.0
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">echo</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>3</pre>
 </div>
 </div>
@@ -2589,7 +2468,7 @@ Try/catch/finally
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">begin</span>
   <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
 <span class="k">rescue</span>
   <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
@@ -2598,25 +2477,23 @@ Try/catch/finally
 <span class="k">end</span>
 
 <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span> <span class="k">rescue</span> <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Can&#x27;t divide
 But that&#x27;s ok
 Can&#x27;t divide
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">();</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nc">Exception</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"Can't divide</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="nx">finally</span> <span class="p">{</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"But that's ok</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Can&#x27;t divide
 But that&#x27;s ok
 </pre>
@@ -2632,26 +2509,24 @@ With a message
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">begin</span>
   <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
 <span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
   <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>divided by 0
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nc">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">();</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>An error!</pre>
 </div>
 </div>
@@ -2665,14 +2540,13 @@ Method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
   <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
 <span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
   <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
 <span class="k">end</span>
 <span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>divided by 0
 </pre>
 </div>
@@ -2690,26 +2564,24 @@ Throw exception
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">begin</span>
   <span class="nb">fail</span> <span class="s1">'An error!'</span>
 <span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
   <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
 <span class="k">end</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>An error!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nc">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">();</span>
 <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>An error!</pre>
 </div>
 </div>
@@ -2724,21 +2596,19 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello
 World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nv">$filePath</span> <span class="o">=</span> <span class="nb">getcwd</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"/code/file.txt"</span><span class="p">;</span>
+<span class="nv">$filePath</span> <span class="o">=</span> <span class="nb">getcwd</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">"/code/file.txt"</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello
 World
 </pre>
@@ -2754,17 +2624,15 @@ Write
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'output.txt'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'output.txt'</span><span class="p">)</span>
 <span class="no">File</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="nb">file_put_contents</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/output.txt"</span><span class="p">,</span> <span class="s2">"Some glorious content"</span><span class="p">);</span></code></pre>
-
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="k">__DIR__</span> <span class="mf">.</span> <span class="s2">"/output.txt"</span><span class="p">,</span> <span class="s2">"Some glorious content"</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'></pre>
 </div>
 </div>
@@ -2778,18 +2646,16 @@ Get working dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">echo</span> <span class="nb">getcwd</span><span class="p">();</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare</pre>
 </div>
 </div>
@@ -2803,18 +2669,16 @@ File path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;file_path.rb
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="k">echo</span> <span class="k">__FILE__</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;FilePath.php</pre>
 </div>
 </div>
@@ -2828,18 +2692,16 @@ Dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nx">__DIR__</span><span class="p">;</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="k">__DIR__</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php</pre>
 </div>
 </div>
@@ -2853,18 +2715,16 @@ Parent dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span><span class="p">);</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="k">__DIR__</span> <span class="mf">.</span> <span class="s2">"/.."</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code</pre>
 </div>
 </div>
@@ -2878,19 +2738,17 @@ Sister dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
 
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span> <span class="o">.</span> <span class="s2">"/ruby"</span><span class="p">);</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="k">__DIR__</span> <span class="mf">.</span> <span class="s2">"/.."</span> <span class="mf">.</span> <span class="s2">"/ruby"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby</pre>
 </div>
 </div>
@@ -2905,26 +2763,24 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">hey</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">hey</span>
   <span class="nb">puts</span> <span class="s1">'How are you?'</span>
 <span class="k">end</span>
 <span class="n">hey</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>How are you?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">function</span> <span class="nf">hey</span><span class="p">()</span>
+<span class="k">function</span> <span class="n">hey</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"How are you?"</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nx">hey</span><span class="p">();</span>
-</code></pre>
-
+<span class="nf">hey</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>How are you?</pre>
 </div>
 </div>
@@ -2938,28 +2794,26 @@ Multiple arguments
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="n">brands</span> <span class="k">if</span> <span class="n">buy</span>
 <span class="k">end</span>
 <span class="n">sweets</span> <span class="kp">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>snickers
 twix
 bounty
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">function</span> <span class="nf">sweets</span><span class="p">(</span><span class="nx">bool</span> <span class="nv">$buy</span><span class="p">,</span> <span class="nx">string</span><span class="o">...</span> <span class="nv">$brands</span><span class="p">)</span>
+<span class="k">function</span> <span class="n">sweets</span><span class="p">(</span><span class="kt">bool</span> <span class="nv">$buy</span><span class="p">,</span> <span class="kt">string</span><span class="mf">...</span> <span class="nv">$brands</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$buy</span><span class="p">)</span>
         <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$brands</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s2">"snickers"</span><span class="p">,</span> <span class="s2">"twix"</span><span class="p">,</span> <span class="s2">"bounty"</span><span class="p">);</span></code></pre>
-
+<span class="nf">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s2">"snickers"</span><span class="p">,</span> <span class="s2">"twix"</span><span class="p">,</span> <span class="s2">"bounty"</span><span class="p">);</span></code></pre></div>
 <pre class='unstyled output text-muted'>array(3) {
   [0]=&gt;
   string(8) &quot;snickers&quot;
@@ -2981,13 +2835,12 @@ Default value for argument
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span> <span class="o">=</span> <span class="kp">false</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span> <span class="o">=</span> <span class="kp">false</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="n">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span>
 <span class="k">end</span>
 <span class="nb">send</span>
 <span class="nb">send</span> <span class="kp">true</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Send locally
 Send abroad
 </pre>
@@ -3006,7 +2859,7 @@ Return
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">multiple</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">multiple</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
   <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -3020,28 +2873,26 @@ Return
 <span class="k">def</span> <span class="nf">default_value</span>
 <span class="k">end</span>
 <span class="nb">p</span> <span class="n">default_value</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>6
 0
 nil
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">function</span> <span class="nf">divide</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$a</span><span class="p">,</span> <span class="nx">int</span> <span class="nv">$b</span><span class="p">)</span> <span class="o">:</span> <span class="nx">float</span>
+<span class="k">function</span> <span class="n">divide</span><span class="p">(</span><span class="kt">int</span> <span class="nv">$a</span><span class="p">,</span> <span class="kt">int</span> <span class="nv">$b</span><span class="p">)</span> <span class="p">:</span> <span class="kt">float</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
         <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">return</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="nf">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nf">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nf">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>0
 2
 0.5
@@ -3058,13 +2909,12 @@ Closure
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">square</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="p">}</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">square</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="n">square</span><span class="p">)</span>
 
 <span class="n">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s1">'Hello World!'</span> <span class="p">}</span>
 <span class="n">greeting</span><span class="p">.</span><span class="nf">call</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>4
 9
 Hello World!
@@ -3084,7 +2934,7 @@ Block passing
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
   <span class="n">selected</span> <span class="o">=</span> <span class="p">[]</span>
   <span class="n">arr</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span>
     <span class="n">selected</span><span class="p">.</span><span class="nf">push</span> <span class="n">a</span> <span class="k">if</span> <span class="k">yield</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -3102,8 +2952,7 @@ Block passing
   <span class="n">selected</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="p">}</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 5
 1
@@ -3124,7 +2973,7 @@ Block binding
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Action</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Action</span>
   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">say</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sentence</span><span class="p">)</span>
     <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'Ann'</span>
     <span class="nb">puts</span> <span class="n">sentence</span><span class="p">.</span><span class="nf">call</span>
@@ -3142,8 +2991,7 @@ Block binding
 <span class="k">end</span>
 
 <span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nf">greet</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>My name is Alex!
 </pre>
 </div>
@@ -3161,7 +3009,7 @@ Initialize in runtime
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">ProccessElements</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">ProccessElements</span>
   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">)</span>
     <span class="n">define_method</span> <span class="s2">"</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">_element"</span> <span class="k">do</span> <span class="o">|</span><span class="n">content</span><span class="o">|</span>
       <span class="s2">"&lt;</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;</span><span class="si">#{</span><span class="n">content</span><span class="si">}</span><span class="s2">&lt;/</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;"</span>
@@ -3175,8 +3023,7 @@ Initialize in runtime
 <span class="k">end</span>
 
 <span class="nb">puts</span> <span class="no">HtmlELements</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">div_element</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
 </pre>
 </div>
@@ -3194,7 +3041,7 @@ Alias
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Greetings</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Greetings</span>
   <span class="k">def</span> <span class="nf">hey</span>
     <span class="nb">puts</span> <span class="s1">'How are you?'</span>
   <span class="k">end</span>
@@ -3202,8 +3049,7 @@ Alias
 <span class="k">end</span>
 
 <span class="no">Greetings</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">hi</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>How are you?
 </pre>
 </div>
@@ -3222,32 +3068,30 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">walk</span>
     <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalC</span>
+<span class="kd">class</span> <span class="nc">AnimalC</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">walk</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalC</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
-
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnimalC</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">walk</span><span class="p">();</span></code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking</pre>
 </div>
 </div>
@@ -3261,7 +3105,7 @@ Constructor
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
     <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
   <span class="k">end</span>
@@ -3272,32 +3116,30 @@ Constructor
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">).</span><span class="nf">walk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalB</span>
+<span class="kd">class</span> <span class="nc">AnimalB</span>
 <span class="p">{</span>
     <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">walk</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"My name is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="si">}</span><span class="s2"> and I'm walking"</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">"My name is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span><span class="si">}</span><span class="s2"> and I'm walking"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalB</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
-
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnimalB</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">walk</span><span class="p">();</span></code></pre></div>
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking</pre>
 </div>
 </div>
@@ -3311,7 +3153,7 @@ Method call
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">walk</span>
     <span class="n">bark</span>
     <span class="n">guard</span>
@@ -3330,39 +3172,37 @@ Method call
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Wuf!
 WUUUF!
 I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalH</span>
+<span class="kd">class</span> <span class="nc">AnimalH</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">walk</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">bark</span><span class="p">();</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">guard</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">bark</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">guard</span><span class="p">();</span>
         <span class="k">echo</span> <span class="s2">"I'm walking</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">bark</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">bark</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"Wuf!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">guard</span><span class="p">()</span>
+    <span class="k">private</span> <span class="k">function</span> <span class="n">guard</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"WUUUF!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalH</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
-</code></pre>
-
+<span class="p">(</span><span class="k">new</span> <span class="nc">AnimalH</span><span class="p">())</span><span class="o">-&gt;</span><span class="nf">walk</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Wuf!
 WUUUF!
 I&#x27;m walking
@@ -3379,32 +3219,30 @@ Class method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">feed</span>
     <span class="nb">puts</span> <span class="s1">'Om nom nom'</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">feed</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalA</span>
+<span class="kd">class</span> <span class="nc">AnimalA</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">feed</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">feed</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">AnimalA</span><span class="o">::</span><span class="na">feed</span><span class="p">();</span>
-</code></pre>
-
+<span class="nc">AnimalA</span><span class="o">::</span><span class="nf">feed</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom</pre>
 </div>
 </div>
@@ -3418,7 +3256,7 @@ Private method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="s1">'Om nom nom'</span> <span class="k">if</span> <span class="n">meat?</span> <span class="n">food</span>
   <span class="k">end</span>
@@ -3431,31 +3269,29 @@ Private method
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">eat</span><span class="p">(</span><span class="s1">'meat'</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalI</span>
+<span class="kd">class</span> <span class="nc">AnimalI</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">eat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">eat</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$food</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">isMeat</span><span class="p">(</span><span class="nv">$food</span><span class="p">))</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">isMeat</span><span class="p">(</span><span class="nv">$food</span><span class="p">))</span>
             <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">isMeat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span> <span class="o">:</span> <span class="nx">bool</span>
+    <span class="k">private</span> <span class="k">function</span> <span class="n">isMeat</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$food</span><span class="p">)</span> <span class="p">:</span> <span class="kt">bool</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="nb">strcmp</span><span class="p">(</span><span class="nv">$food</span><span class="p">,</span> <span class="s2">"meat"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalI</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">eat</span><span class="p">(</span><span class="s2">"meat"</span><span class="p">);</span>
-</code></pre>
-
+<span class="p">(</span><span class="k">new</span> <span class="nc">AnimalI</span><span class="p">())</span><span class="o">-&gt;</span><span class="nf">eat</span><span class="p">(</span><span class="s2">"meat"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Om nom nom</pre>
 </div>
 </div>
@@ -3469,7 +3305,7 @@ Private method, access instance variable
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
     <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
     <span class="n">greet</span>
@@ -3483,33 +3319,31 @@ Private method, access instance variable
 <span class="k">end</span>
 
 <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">)</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello! My name is Kelya
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalJ</span>
+<span class="kd">class</span> <span class="nc">AnimalJ</span>
 <span class="p">{</span>
     <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">greet</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">greet</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">greet</span><span class="p">()</span>
+    <span class="k">private</span> <span class="k">function</span> <span class="n">greet</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"Hello! My name is "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">"Hello! My name is "</span> <span class="mf">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">new</span> <span class="nx">AnimalJ</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-</code></pre>
-
+<span class="k">new</span> <span class="nc">AnimalJ</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Hello! My name is Kelya</pre>
 </div>
 </div>
@@ -3523,7 +3357,7 @@ Field
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
     <span class="vi">@toy</span> <span class="o">=</span> <span class="n">toy</span>
   <span class="k">end</span>
@@ -3536,35 +3370,33 @@ Field
 <span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
 <span class="n">animal</span><span class="p">.</span><span class="nf">take</span><span class="p">(</span><span class="s1">'a ball'</span><span class="p">)</span>
 <span class="n">animal</span><span class="p">.</span><span class="nf">play</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalD</span>
+<span class="kd">class</span> <span class="nc">AnimalD</span>
 <span class="p">{</span>
 
     <span class="k">private</span> <span class="nv">$toy</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">take</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$toy</span><span class="p">)</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">take</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$toy</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span> <span class="o">=</span> <span class="nv">$toy</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">toy</span> <span class="o">=</span> <span class="nv">$toy</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">play</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">play</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"I'm playing with "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">"I'm playing with "</span> <span class="mf">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">toy</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalD</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">take</span><span class="p">(</span><span class="s2">"a ball"</span><span class="p">);</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">play</span><span class="p">();</span>
-</code></pre>
-
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnimalD</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">take</span><span class="p">(</span><span class="s2">"a ball"</span><span class="p">);</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">play</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball</pre>
 </div>
 </div>
@@ -3578,41 +3410,39 @@ Get/set
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:name</span>
 <span class="k">end</span>
 
 <span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
 <span class="n">animal</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span>
 <span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">name</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Kelya
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalE</span>
+<span class="kd">class</span> <span class="nc">AnimalE</span>
 <span class="p">{</span>
     <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">setName</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">setName</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span> <span class="o">:</span> <span class="nx">string</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getName</span><span class="p">()</span> <span class="p">:</span> <span class="kt">string</span>
     <span class="p">{</span>
-        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalE</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span>
-</code></pre>
-
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnimalE</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">setName</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$animal</span><span class="o">-&gt;</span><span class="nf">getName</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>Kelya</pre>
 </div>
 </div>
@@ -3626,7 +3456,7 @@ Inheritance
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">walk</span>
     <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
   <span class="k">end</span>
@@ -3639,34 +3469,32 @@ Inheritance
 <span class="k">end</span>
 
 <span class="no">Dog</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalG</span>
+<span class="kd">class</span> <span class="nc">AnimalG</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">walk</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Dog</span> <span class="k">extends</span> <span class="nx">AnimalG</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">AnimalG</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">sing</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">sing</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"Bark!"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dog</span><span class="p">();</span>
-<span class="nv">$dog</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
-</code></pre>
-
+<span class="nv">$dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="p">();</span>
+<span class="nv">$dog</span><span class="o">-&gt;</span><span class="nf">walk</span><span class="p">();</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>I&#x27;m walking</pre>
 </div>
 </div>
@@ -3680,7 +3508,7 @@ Mixin
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Moving</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Moving</span>
   <span class="k">def</span> <span class="nf">walk</span>
     <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2"> is walking"</span>
   <span class="k">end</span>
@@ -3700,8 +3528,7 @@ Mixin
 <span class="n">human</span> <span class="o">=</span> <span class="no">Human</span><span class="p">.</span><span class="nf">new</span>
 <span class="n">human</span><span class="p">.</span><span class="nf">walk</span>
 <span class="n">human</span><span class="p">.</span><span class="nf">talk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>Human is walking
 Human is talking
 </pre>
@@ -3720,7 +3547,7 @@ Has method?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
   <span class="k">def</span> <span class="nf">walk</span>
     <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
   <span class="k">end</span>
@@ -3728,27 +3555,25 @@ Has method?
 
 <span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
 <span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">respond_to?</span> <span class="ss">:walk</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">class</span> <span class="nc">AnimalF</span>
+<span class="kd">class</span> <span class="nc">AnimalF</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">walk</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalF</span><span class="p">();</span>
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnimalF</span><span class="p">();</span>
 <span class="nv">$hasMethod</span> <span class="o">=</span> <span class="nb">method_exists</span><span class="p">(</span><span class="nv">$animal</span><span class="p">,</span> <span class="s2">"walk"</span><span class="p">);</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$hasMethod</span><span class="p">);</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bool(true)
 </pre>
 </div>
@@ -3764,17 +3589,15 @@ Comment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="c1"># it's a comment</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># it's a comment</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="c1">// it's a comment
-</span></code></pre>
-
+<span class="c1">// it's a comment</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'></pre>
 </div>
 </div>
@@ -3788,11 +3611,10 @@ Assign value if not exist
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">speed</span> <span class="o">||=</span> <span class="mi">15</span>
 <span class="nb">puts</span> <span class="n">speed</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>0
 </pre>
 </div>
@@ -3810,8 +3632,8 @@ Safe navigation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<span class='small'>[ 2.3 ]</span><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Winner</span>
-  <span class="kp">attr_reader</span> <span class="ss">:address</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Winner</span>
+  <span class="nb">attr_reader</span> <span class="ss">:address</span>
 
   <span class="k">def</span> <span class="nf">initialize</span>
     <span class="c1"># @address = Address.new</span>
@@ -3819,7 +3641,7 @@ Safe navigation
 <span class="k">end</span>
 
 <span class="k">class</span> <span class="nc">Address</span>
-  <span class="kp">attr_reader</span> <span class="ss">:zipcode</span>
+  <span class="nb">attr_reader</span> <span class="ss">:zipcode</span>
 
   <span class="k">def</span> <span class="nf">initialize</span>
     <span class="vi">@zipcode</span> <span class="o">=</span> <span class="mi">192187</span>
@@ -3828,8 +3650,7 @@ Safe navigation
 
 <span class="n">zip</span> <span class="o">=</span> <span class="no">Winner</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">address</span><span class="o">&amp;</span><span class="p">.</span><span class="nf">zipcode</span>
 <span class="nb">puts</span> <span class="n">zip</span> <span class="p">?</span> <span class="s2">"Zipcode is </span><span class="si">#{</span><span class="n">zip</span><span class="si">}</span><span class="s2">"</span> <span class="p">:</span> <span class="s2">"No prize without zipcode"</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>No prize without zipcode
 </pre>
 </div>
@@ -3847,7 +3668,7 @@ Import another file
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="c1"># other_file_to_import.rb</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># other_file_to_import.rb</span>
 <span class="c1"># class Import</span>
 <span class="c1">#   def initialize</span>
 <span class="c1">#     puts 'I am imported!'</span>
@@ -3856,21 +3677,19 @@ Import another file
 
 <span class="nb">require_relative</span> <span class="s1">'other_file_to_import'</span>
 <span class="no">Import</span><span class="p">.</span><span class="nf">new</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>I am imported!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="c1">// OtherFileToImport.php
-// &lt;?php
-// echo "I am imported!";
-</span>
+<span class="c1">// OtherFileToImport.php</span>
+<span class="c1">// &lt;?php</span>
+<span class="c1">// echo "I am imported!";</span>
+
 <span class="k">include</span> <span class="s2">"OtherFileToImport.php"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>I am imported!</pre>
 </div>
 </div>
@@ -3884,10 +3703,9 @@ Destructuring assignment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 <span class="nb">puts</span> <span class="n">one</span><span class="p">,</span> <span class="n">two</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>1
 2
 </pre>
@@ -3906,19 +3724,17 @@ Date
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'date'</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'date'</span>
 <span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>2024-05-28
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nc">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="nf">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>2024-05-28</pre>
 </div>
 </div>
@@ -3932,18 +3748,16 @@ Time
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>2024-05-28 20:17:54 +0200
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
-</code></pre>
-
+<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nc">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="nf">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>05&#x2F;28&#x2F;24 06:22 PM</pre>
 </div>
 </div>
@@ -3957,21 +3771,19 @@ Not
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
 <span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">if</span> <span class="o">!</span><span class="n">angry</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>smile!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
     <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>smile!</pre>
 </div>
 </div>
@@ -3985,11 +3797,10 @@ Assign this or that
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">yeti</span> <span class="o">=</span> <span class="kp">nil</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">yeti</span> <span class="o">=</span> <span class="kp">nil</span>
 <span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="o">||</span> <span class="s1">'bear'</span>
 <span class="nb">puts</span> <span class="n">footprints</span>
-</code></pre>
-
+</code></pre></div>
 <pre class='unstyled output text-muted'>bear
 </pre>
 </div>
@@ -4007,19 +3818,17 @@ Run command
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sb">`ruby -v`</span>
-</code></pre>
-
+<div class="highlight"><pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sb">`ruby -v`</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-darwin21]
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="nv">$output</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="nb">exec</span><span class="p">(</span><span class="s2">"php --version"</span><span class="p">,</span> <span class="nv">$output</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$output</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span></code></pre>
-
+<span class="k">echo</span> <span class="nv">$output</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span></code></pre></div>
 <pre class='unstyled output text-muted'>PHP 8.2.8 (cli) (built: Jul  6 2023 11:16:57) (NTS)</pre>
 </div>
 </div>
@@ -4031,6 +3840,6 @@ Run command
 </span>
 
 <div id='footer'></div>
-<script src="../javascripts/all-091923e6.js"></script>
+<script src="../javascripts/all-6db4b1f3.js"></script>
 </body>
 </html>
