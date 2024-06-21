@@ -3314,13 +3314,14 @@ Has method?
 <div class='row'>
 <div class='col-md-6'>
 <div class="highlight"><pre class="highlight kotlin"><code><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
-    <span class="p">}</span>
+  <span class="k">fun</span> <span class="nf">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kd">val</span> <span class="py">animal</span> <span class="p">=</span> <span class="nc">Animal</span><span class="p">()</span>
-<span class="nf">println</span><span class="p">(</span><span class="n">animal</span><span class="o">::</span><span class="n">walk</span> <span class="k">is</span> <span class="nc">Function0</span><span class="p">&lt;</span><span class="err">*</span><span class="p">&gt;)</span></code></pre></div>
+<span class="nf">println</span><span class="p">(</span><span class="n">animal</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">.</span><span class="nf">getMethod</span><span class="p">(</span><span class="s">"walk"</span><span class="p">)</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+</code></pre></div>
 <pre class='unstyled output text-muted'>true
 </pre>
 </div>
