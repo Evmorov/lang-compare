@@ -18,22 +18,18 @@ All languages:
 - It's possible to achieve anything with any language (especially with a library). However when a solution is really long and difficult to read it's better to not provide it
 - Every task can be solved in different ways but it's preferable to provide not more than one the most used example
 
-Java:
+Java and Kotlin:
 
 - 2 spaces is used to make the code more concise
-- The examples are for Java 7. Java 8 has many features but sadly it's unavailable for Android
 
 ## What's next
 
-Add more languages: Kotlin, TypeScript (and any more)!
+Add more languages:
 
 * Ruby - Elixir
 * Ruby - Crystal
-* Java - Kotlin
 * Java - C#
 * JavaScript - TypeScript
-
-It would be nice to modify the existing examples to make them funnier.
 
 ## Development
 
