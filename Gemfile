@@ -13,10 +13,9 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3'
 gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'jquery-middleman', '~> 3.1'
-gem 'middleman-syntax', '~> 2.1'
+gem 'middleman-syntax'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 group :development do
-  gem 'middleman-pry'
   gem 'rake'
 end
