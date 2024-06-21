@@ -1,8 +1,8 @@
 class Animal {
-    fun walk() {
-        println("I'm walking")
-    }
+  fun walk() {
+    println("I'm walking")
+  }
 }
 
 val animal = Animal()
-println(animal::walk is Function0<*>)
+println(animal::class.java.getMethod("walk") != null)
